@@ -1,0 +1,93 @@
+
+% --------------------------------------------------------------
+% This is all preamble stuff that you don't have to worry about.
+% Head down to where it says "Start here"
+% --------------------------------------------------------------
+
+\documentclass[12pt]{article}
+ 
+\usepackage[margin=1in]{geometry} 
+\usepackage{amsmath,amsthm,amssymb}
+\usepackage{comment}
+ 
+
+ 
+\newenvironment{theorem}[2][Theorem]{\begin{trivlist}
+\item[\hskip \labelsep {\bfseries #1}\hskip \labelsep {\bfseries #2.}]}{\end{trivlist}}
+\newenvironment{lemma}[2][Lemma]{\begin{trivlist}
+\item[\hskip \labelsep {\bfseries #1}\hskip \labelsep {\bfseries #2.}]}{\end{trivlist}}
+\newenvironment{exercise}[2][Exercise]{\begin{trivlist}
+\item[\hskip \labelsep {\bfseries #1}\hskip \labelsep {\bfseries #2.}]}{\end{trivlist}}
+\newenvironment{problem}[2][Problem]{\begin{trivlist}
+\item[\hskip \labelsep {\bfseries #1}\hskip \labelsep {\bfseries #2.}]}{\end{trivlist}}
+\newenvironment{question}[2][Question]{\begin{trivlist}
+\item[\hskip \labelsep {\bfseries #1}\hskip \labelsep {\bfseries #2.}]}{\end{trivlist}}
+\newenvironment{corollary}[2][Corollary]{\begin{trivlist}
+\item[\hskip \labelsep {\bfseries #1}\hskip \labelsep {\bfseries #2.}]}{\end{trivlist}}
+
+% Solutions use a modified proof environment
+\newenvironment{solution}
+               {\let\oldqedsymbol=\qedsymbol
+                \renewcommand{\qedsymbol}{$\blacktriangleleft$}
+                \begin{proof}[\textit\upshape Solution]}
+               {\end{proof}
+                \renewcommand{\qedsymbol}{\oldqedsymbol}}
+ 
+\begin{document}
+
+% --------------------------------------------------------------
+%                         Start here
+% --------------------------------------------------------------
+
+\title{Individual 4}%replace X with the appropriate number
+\author{Yu Fan Mei\\ %replace with your name
+	Introduction to Proof and Problem Solving} %if necessary, replace with your course title
+
+\maketitle
+
+\begin{problem}{12} %You can use theorem, exercise, problem, or question here.  Modify x.yz to be whatever number you are proving
+Write the negation of the statement
+
+$$p \equiv \{ \forall n \in \mathbb{Z}, \exists m \in \mathbb{Z} \text{ such that } 4n + 3m = 0 \text{ or } 4n + 3m = 1 \} $$
+
+and prove $p$ or $\lnot p$ is true. Do some examples.
+
+\end{problem}
+
+\begin{solution} The negation of $p$ is
+
+	$$ \lnot p \equiv \{ \exists n \in \mathbb{Z}, \forall m \in \mathbb{Z} \text{ such that } 4n + 3m \neq 0 \text{ and } 4n + 3m \neq 1 \}. $$
+
+
+\end{solution}
+
+
+\begin{proof} We will now prove $\lnot p.$ Set $n_0 = 2.$ Then $4n_0 = 8.$ Let $m_0$ be an arbitrary integer. We will consider cases.
+
+	\noindent Case 1. Suppose $m_0 \geq -2.$ Multiplying by 3, we get $3m_0 \geq -6.$ Adding 8 to both sides, we get
+
+	$$8 + 3m_0 \geq 2.$$
+
+	Substituting $4n_0$ for 8, we get
+
+	$$4n_0 + 3m_0 \geq 2.$$
+
+
+	\noindent Case 2. Suppose $m_0 \leq -3$. Multiplying both sides by 3, we get $3m_0 \leq -9$. Adding 8 to both sides, we get
+
+	$$8 + 3m_0 \leq -1.$$
+
+	But since $4n_0 = 8$, we have
+
+	$$4n_0 + 3m_0 \leq -1$$.
+
+	Since $4n_0 + 3m_0 \neq 0$ and $4n_0 + 3m_0 \neq 1$ for all $m_0$, $\lnot p$ is true.
+
+
+
+\end{proof}
+
+
+\noindent While working on this proof, I received no external assistance aside from advice from Professor Mehmetaj.
+
+\end{document}

@@ -1,0 +1,107 @@
+
+% --------------------------------------------------------------
+% This is all preamble stuff that you don't have to worry about.
+% Head down to where it says "Start here"
+% --------------------------------------------------------------
+
+\documentclass[12pt]{article}
+ 
+\usepackage[margin=1in]{geometry} 
+\usepackage{amsmath,amsthm,amssymb}
+ 
+
+ 
+\newenvironment{theorem}[2][Theorem]{\begin{trivlist}
+\item[\hskip \labelsep {\bfseries #1}\hskip \labelsep {\bfseries #2.}]}{\end{trivlist}}
+\newenvironment{lemma}[2][Lemma]{\begin{trivlist}
+\item[\hskip \labelsep {\bfseries #1}\hskip \labelsep {\bfseries #2.}]}{\end{trivlist}}
+\newenvironment{exercise}[2][Exercise]{\begin{trivlist}
+\item[\hskip \labelsep {\bfseries #1}\hskip \labelsep {\bfseries #2.}]}{\end{trivlist}}
+\newenvironment{problem}[2][Problem]{\begin{trivlist}
+\item[\hskip \labelsep {\bfseries #1}\hskip \labelsep {\bfseries #2.}]}{\end{trivlist}}
+\newenvironment{question}[2][Question]{\begin{trivlist}
+\item[\hskip \labelsep {\bfseries #1}\hskip \labelsep {\bfseries #2.}]}{\end{trivlist}}
+\newenvironment{corollary}[2][Corollary]{\begin{trivlist}
+\item[\hskip \labelsep {\bfseries #1}\hskip \labelsep {\bfseries #2.}]}{\end{trivlist}}
+
+% Solutions use a modified proof environment
+\newenvironment{solution}
+               {\let\oldqedsymbol=\qedsymbol
+                \renewcommand{\qedsymbol}{$\blacktriangleleft$}
+                \begin{proof}[\textit\upshape Solution]}
+               {\end{proof}
+                \renewcommand{\qedsymbol}{\oldqedsymbol}}
+ 
+\begin{document}
+ 
+% --------------------------------------------------------------
+%                         Start here
+% --------------------------------------------------------------
+ 
+\title{Individual 2}%replace X with the appropriate number
+\author{Yu Fan Mei\\ %replace with your name
+Introduction to Proof and Problem Solving} %if necessary, replace with your course title
+ 
+\maketitle
+\begin{problem}{1}Set $S$ equal to the set of points in $\mathbb{R}^2$ defined by 
+
+    $$S =  \left\{ \left( \frac{x + 1}{x - 2}, \frac{5x - 1}{x - 2} \right) : x \in \mathbb{R} - \{2\} \right\} $$
+Similarly, set $T$ equal to the set of points in $\mathbb{R}^2$ defined by
+    $$T =  \{ ( y + 4, 3y + 14 ) : y \in \mathbb{R} \} $$
+
+ 
+(a) %You can use theorem, exercise, problem, or question here.  Modify x.yz to be whatever number you are proving
+Prove $S \subseteq T$ using let-variables or prove it is not true using contradiction.
+
+\end{problem}
+\begin{proof} Let $s_{0}$ be any point in $S$. By definition, there exists a real number $x_{0}$ which is not 2 such that 
+
+$$s_{0} = \left( \frac{x_{0} + 1}{x_{0} - 2}, \frac{5x_{0} - 1}{x_{0} - 2} \right).$$
+
+Set $y_{0} = (9 - 3x_{0} ) / (x_{0} - 2 )$. Since $x_{0} \neq 2, x_{0} - 2 \neq 0 $, and $y_{0} \in \mathbb{R}$. Then 
+
+$$ \left( y_{0} + 4, 3y_{0} + 14 \right) \in T. $$
+
+But
+\begin{align*}
+    \left( y_{0} + 4, 3y_{0} + 14 \right) & = \left( \frac{9 - 3x_{0}}{x_{0} - 2} + 4, 3\left( \frac{9 - 3x_{0}}{x_{0} - 2} \right) + 14 \right)\\
+    & = \left( \frac{x_{0} + 1}{x_{0} - 2}, \frac{5x_{0} - 1}{x_{0} - 2} \right)\\
+    & = s_{0}.\\
+\end{align*}
+
+Since $s_{0} \in T$, we have $S \subseteq T$.
+\end{proof}
+
+
+\newpage
+(b) %You can use theorem, exercise, problem, or question here.  Modify x.yz to be whatever number you are proving
+Prove $T \subseteq S$ using let-variables or prove it is not true using contradiction.
+
+\begin{proof}
+    Suppose this statement is true. Let $t_{0}$ be any ordered pair in $T$, where $$ t_{0} = \left( y_{0} + 4, 3y_{0} + 14 \right)$$
+
+    Set $y_{0} = -3$. We then get $ t_{0} = \left( 1, 5 \right) $. Let $x_0$ be any real number that is not 2. By definition, there must be some $x_0$ such that 
+
+    $$(1, 5) = \left( \frac{x_{0} + 1}{x_{0} - 2}, \frac{5x_{0} - 1}{x_{0} - 2} \right) $$
+    
+    
+    Examining the first point in the ordered pair, there must be some $x_0$ that satisfies the following equation:
+
+    $$ \frac{x_0 + 1}{x_0 - 2} = 1 $$.
+
+    Since $x_0 \neq 2$, $x_0 - 2 \neq 0$, and the equation will still hold true when we divide both sides by $x_0 - 2 \neq 0$. Doing this, we get
+
+    $$x_0 + 1 = x_0 - 2$$.
+
+    Subtracting $x_0$ from both sides, we get
+
+    $$1 = -2$$
+
+    which is not true. So $T \not\subseteq S$.
+    
+    
+\end{proof}
+
+While working on this document, I used no outside help except for Professor Mehmetaj.
+ 
+\end{document}

@@ -1,0 +1,72 @@
+
+% --------------------------------------------------------------
+% This is all preamble stuff that you don't have to worry about.
+% Head down to where it says "Start here"
+% --------------------------------------------------------------
+
+\documentclass[12pt]{article}
+ 
+\usepackage[margin=1in]{geometry} 
+\usepackage{amsmath,amsthm,amssymb}
+ 
+
+ 
+\newenvironment{theorem}[2][Theorem]{\begin{trivlist}
+\item[\hskip \labelsep {\bfseries #1}\hskip \labelsep {\bfseries #2.}]}{\end{trivlist}}
+\newenvironment{lemma}[2][Lemma]{\begin{trivlist}
+\item[\hskip \labelsep {\bfseries #1}\hskip \labelsep {\bfseries #2.}]}{\end{trivlist}}
+\newenvironment{exercise}[2][Exercise]{\begin{trivlist}
+\item[\hskip \labelsep {\bfseries #1}\hskip \labelsep {\bfseries #2.}]}{\end{trivlist}}
+\newenvironment{problem}[2][Problem]{\begin{trivlist}
+\item[\hskip \labelsep {\bfseries #1}\hskip \labelsep {\bfseries #2.}]}{\end{trivlist}}
+\newenvironment{question}[2][Question]{\begin{trivlist}
+\item[\hskip \labelsep {\bfseries #1}\hskip \labelsep {\bfseries #2.}]}{\end{trivlist}}
+\newenvironment{corollary}[2][Corollary]{\begin{trivlist}
+\item[\hskip \labelsep {\bfseries #1}\hskip \labelsep {\bfseries #2.}]}{\end{trivlist}}
+
+% Solutions use a modified proof environment
+\newenvironment{solution}
+               {\let\oldqedsymbol=\qedsymbol
+                \renewcommand{\qedsymbol}{$\blacktriangleleft$}
+                \begin{proof}[\textit\upshape Solution]}
+               {\end{proof}
+                \renewcommand{\qedsymbol}{\oldqedsymbol}}
+ 
+\begin{document}
+ 
+% --------------------------------------------------------------
+%                         Start here
+% --------------------------------------------------------------
+ 
+\title{Individual 3}%replace X with the appropriate number
+\author{Yu Fan Mei\\ %replace with your name
+Introduction to Proof and Problem Solving} %if necessary, replace with your course title
+ 
+\maketitle
+ 
+\begin{problem}{18} %You can use theorem, exercise, problem, or question here.  Modify x.yz to be whatever number you are proving
+Show that the function $f$ mapping $S = \mathbb{R}$ into $T = \mathbb{R}$ is onto $T$, where
+
+$$f(x) = \begin{cases} x+3 & x \not\in \mathbb{Z} \\
+    x-2 & x \in \mathbb{Z} \end{cases} $$
+
+\end{problem}
+ 
+\begin{proof} Let $y_0$ be an arbitrary real number. We consider two cases. 
+
+\noindent Case 1: Suppose $y_0$ is an integer. Set $x_0$ = $y_0 + 2$. Since integers are closed under addition, $x_0$ is an integer. Subtracting $2$ from both sides, we get
+
+$$x_0 - 2 = y_0.$$
+
+\noindent Case 2: Suppose $y_0$ is not an integer. We know integers are closed under addition. Thus, if $y_0$ is not an integer, $y_0 - 3$ cannot be an integer. Set $x_0 = y_0 - 3$. Adding 3 to both sides, we get 
+
+$$x_0 + 3 = y_0.$$
+
+Since $x_0 \in \mathbb{Z}$ in case 1 and $x_0 \in \mathbb{R} - \mathbb{Z}$ in case 2, $x_0$ can be any real number and thus $x \in S$. Thus, we have proven $f : S \to T$ is onto $T$.
+
+
+\end{proof}
+
+While working on this proof, I had no external assistance aside from advice from Professor Mehmetaj.
+ 
+\end{document}

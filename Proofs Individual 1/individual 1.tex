@@ -1,0 +1,119 @@
+
+% --------------------------------------------------------------
+% This is all preamble stuff that you don't have to worry about.
+% Head down to where it says "Start here"
+% --------------------------------------------------------------
+
+\documentclass[12pt]{article}
+ 
+\usepackage[margin=1in]{geometry} 
+\usepackage{amsmath,amsthm,amssymb}
+ 
+
+ 
+\newenvironment{theorem}[2][Theorem]{\begin{trivlist}
+\item[\hskip \labelsep {\bfseries #1}\hskip \labelsep {\bfseries #2.}]}{\end{trivlist}}
+\newenvironment{lemma}[2][Lemma]{\begin{trivlist}
+\item[\hskip \labelsep {\bfseries #1}\hskip \labelsep {\bfseries #2.}]}{\end{trivlist}}
+\newenvironment{exercise}[2][Exercise]{\begin{trivlist}
+\item[\hskip \labelsep {\bfseries #1}\hskip \labelsep {\bfseries #2.}]}{\end{trivlist}}
+\newenvironment{problem}[2][Problem]{\begin{trivlist}
+\item[\hskip \labelsep {\bfseries #1}\hskip \labelsep {\bfseries #2.}]}{\end{trivlist}}
+\newenvironment{question}[2][Question]{\begin{trivlist}
+\item[\hskip \labelsep {\bfseries #1}\hskip \labelsep {\bfseries #2.}]}{\end{trivlist}}
+\newenvironment{corollary}[2][Corollary]{\begin{trivlist}
+\item[\hskip \labelsep {\bfseries #1}\hskip \labelsep {\bfseries #2.}]}{\end{trivlist}}
+
+% Solutions use a modified proof environment
+\newenvironment{solution}
+               {\let\oldqedsymbol=\qedsymbol
+                \renewcommand{\qedsymbol}{$\blacktriangleleft$}
+                \begin{proof}[\textit\upshape Solution]}
+               {\end{proof}
+                \renewcommand{\qedsymbol}{\oldqedsymbol}}
+ 
+\begin{document}
+ 
+% --------------------------------------------------------------
+%                         Start here
+% --------------------------------------------------------------
+ 
+\title{Individual 1}%replace X with the appropriate number
+\author{Yu Fan Mei\\ %replace with your name
+Introduction to Proof and Problem Solving} %if necessary, replace with your course title
+ 
+\maketitle
+ 
+\begin{theorem}{x.yz} %You can use theorem, exercise, problem, or question here.  Modify x.yz to be whatever number you are proving
+Delete this text and write theorem statement here.
+\end{theorem}
+ 
+\begin{proof}
+Blah, blah, blah.  Here is an example of the \texttt{align} environment:
+%Note 1: The * tells LaTeX not to number the lines.  If you remove the *, be sure to remove it below, too.
+%Note 2: Inside the align environment, you do not want to use $-signs.  The reason for this is that this is already a math environment. This is why we have to include \text{} around any text inside the align environment.
+\begin{align*}
+\sum_{i=1}^{k+1}i & = \left(\sum_{i=1}^{k}i\right) +(k+1)\\ 
+& = \frac{k(k+1)}{2}+k+1 & (\text{by inductive hypothesis})\\
+& = \frac{k(k+1)+2(k+1)}{2}\\
+& = \frac{(k+1)(k+2)}{2}\\
+& = \frac{(k+1)((k+1)+1)}{2}.
+\end{align*}
+\end{proof}
+ 
+\begin{theorem}{x.yz}
+Let $n\in \mathbb{Z}$.  Then yada yada. 
+\end{theorem}
+ 
+\begin{proof}
+Blah, blah, blah.  I'm so smart. 
+\end{proof}
+
+\begin{problem}{1}
+Create and fill in a truth table for the logical formula
+\begin{equation} \label{eq}
+((P \vee Q) \Longrightarrow R) \Longrightarrow ((P \Longrightarrow R) \wedge (Q \Longrightarrow R)).
+\end{equation}
+You probably will want to use the \texttt{tabular} or \texttt{array} environment, as well as the \texttt{table} environment (to add a caption, for example).  Your truth table should have at least four columns (for the propositions $P$, $Q$, $R$ and the large formula (\ref{eq})) and nine rows (one for each possible combination of truth values of $P$, $Q$ and $R$ plus a top row labeling the columns).  \emph{Warning}:  Formula (\ref{eq}) may take up too much space if you include it as a column label in your table.  Think carefully about how to resolve this problem.
+\end{problem}
+
+
+\begin{solution} Blah blah blah
+\newpage 
+
+\begin{table}[t] %Instead of t, which refers to top, you may also use h for here or b for bottom.
+	\centering
+	\begin{tabular}{|c|r|c|l|} % c centers the column contents; l makes the column contents left-justified, and r makes the column contents right-justified.
+		\hline
+		$P$ & $Q$ & $R$ &  $((P \Longrightarrow R) \wedge (Q \Longrightarrow R))$ \\
+		\hline
+		T & T & T & T\\
+		\hline
+		& & & \\
+		\hline
+		& & & \\
+		\hline
+		& & & \\
+		\hline
+		& & & \\
+		\hline
+		& & & \\
+		\hline
+		& & & \\
+		\hline
+		& & & \\
+		\hline
+	\end{tabular}
+	\caption{Table with 4 columns and nine rows}
+	\label{tab:truth1}
+\end{table}
+
+\end{solution}
+
+
+ 
+% --------------------------------------------------------------
+%     You don't have to mess with anything below this line.
+% --------------------------------------------------------------
+ 
+\end{document}

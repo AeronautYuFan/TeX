@@ -1,7 +1,7 @@
-PWD c:\Users\Aeron\OneDrive\Documents\Code\TeX\Proofs Individual 4
+PWD c:\Users\Aeron\OneDrive\Documents\Code\TeX\Group 4
 INPUT C:\Users\Aeron\AppData\Local\MiKTeX\miktex\data\le\pdftex\pdflatex.fmt
-INPUT c:\Users\Aeron\OneDrive\Documents\Code\TeX\Proofs Individual 4\individual 4.tex
-OUTPUT individual 4.log
+INPUT c:\Users\Aeron\OneDrive\Documents\Code\TeX\Group 4\group 4.tex
+OUTPUT group 4.log
 INPUT C:\Program Files\MiKTeX\tex\latex\base\article.cls
 INPUT C:\Program Files\MiKTeX\tex\latex\base\article.cls
 INPUT C:\Program Files\MiKTeX\tex\latex\base\size12.clo
@@ -39,10 +39,10 @@ INPUT C:\Program Files\MiKTeX\tex\latex\comment\comment.sty
 INPUT C:\Program Files\MiKTeX\tex\latex\comment\comment.sty
 INPUT C:\Program Files\MiKTeX\tex\latex\l3backend\l3backend-pdftex.def
 INPUT C:\Program Files\MiKTeX\tex\latex\l3backend\l3backend-pdftex.def
-INPUT .\individual 4.aux
-INPUT .\individual 4.aux
-INPUT individual 4.aux
-OUTPUT individual 4.aux
+INPUT .\group 4.aux
+INPUT .\group 4.aux
+INPUT group 4.aux
+OUTPUT group 4.aux
 INPUT C:\Program Files\MiKTeX\fonts\tfm\public\cm\cmr17.tfm
 INPUT C:\Program Files\MiKTeX\fonts\tfm\public\cm\cmr12.tfm
 INPUT C:\Program Files\MiKTeX\fonts\tfm\public\cm\cmmi12.tfm
@@ -80,11 +80,13 @@ INPUT C:\Program Files\MiKTeX\fonts\tfm\public\amsfonts\symbols\msbm10.tfm
 INPUT C:\Program Files\MiKTeX\fonts\tfm\public\amsfonts\symbols\msbm10.tfm
 INPUT C:\Program Files\MiKTeX\fonts\tfm\public\amsfonts\symbols\msbm7.tfm
 INPUT C:\Program Files\MiKTeX\fonts\tfm\public\cm\cmti12.tfm
-OUTPUT individual 4.pdf
+OUTPUT group 4.pdf
 INPUT C:\Users\Aeron\AppData\Local\MiKTeX\fonts\map\pdftex\pdftex.map
-INPUT individual 4.aux
+INPUT group 4.aux
 INPUT C:\Program Files\MiKTeX\fonts\type1\public\amsfonts\cm\cmbx12.pfb
 INPUT C:\Program Files\MiKTeX\fonts\type1\public\amsfonts\cm\cmbx12.pfb
+INPUT C:\Program Files\MiKTeX\fonts\type1\public\amsfonts\cm\cmex10.pfb
+INPUT C:\Program Files\MiKTeX\fonts\type1\public\amsfonts\cm\cmex10.pfb
 INPUT C:\Program Files\MiKTeX\fonts\type1\public\amsfonts\cm\cmmi12.pfb
 INPUT C:\Program Files\MiKTeX\fonts\type1\public\amsfonts\cm\cmmi12.pfb
 INPUT C:\Program Files\MiKTeX\fonts\type1\public\amsfonts\cm\cmr12.pfb

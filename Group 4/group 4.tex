@@ -1,0 +1,72 @@
+
+% --------------------------------------------------------------
+% This is all preamble stuff that you don't have to worry about.
+% Head down to where it says "Start here"
+% --------------------------------------------------------------
+
+\documentclass[12pt]{article}
+ 
+\usepackage[margin=1in]{geometry} 
+\usepackage{amsmath,amsthm,amssymb}
+\usepackage{comment}
+ 
+
+ 
+\newenvironment{theorem}[2][Theorem]{\begin{trivlist}
+\item[\hskip \labelsep {\bfseries #1}\hskip \labelsep {\bfseries #2.}]}{\end{trivlist}}
+\newenvironment{lemma}[2][Lemma]{\begin{trivlist}
+\item[\hskip \labelsep {\bfseries #1}\hskip \labelsep {\bfseries #2.}]}{\end{trivlist}}
+\newenvironment{exercise}[2][Exercise]{\begin{trivlist}
+\item[\hskip \labelsep {\bfseries #1}\hskip \labelsep {\bfseries #2.}]}{\end{trivlist}}
+\newenvironment{problem}[2][Problem]{\begin{trivlist}
+\item[\hskip \labelsep {\bfseries #1}\hskip \labelsep {\bfseries #2.}]}{\end{trivlist}}
+\newenvironment{question}[2][Question]{\begin{trivlist}
+\item[\hskip \labelsep {\bfseries #1}\hskip \labelsep {\bfseries #2.}]}{\end{trivlist}}
+\newenvironment{corollary}[2][Corollary]{\begin{trivlist}
+\item[\hskip \labelsep {\bfseries #1}\hskip \labelsep {\bfseries #2.}]}{\end{trivlist}}
+
+% Solutions use a modified proof environment
+\newenvironment{solution}
+               {\let\oldqedsymbol=\qedsymbol
+                \renewcommand{\qedsymbol}{$\blacktriangleleft$}
+                \begin{proof}[\textit\upshape Solution]}
+               {\end{proof}
+                \renewcommand{\qedsymbol}{\oldqedsymbol}}
+ 
+\begin{document}
+
+% --------------------------------------------------------------
+%                         Start here
+% --------------------------------------------------------------
+
+\title{Group 4}%replace X with the appropriate number
+\author{Helen Freedman, Pruthvi Jasty, Yu Fan Mei\\ %replace with your name
+	Introduction to Proof and Problem Solving} %if necessary, replace with your course title
+\maketitle
+
+\begin{problem}{4a} %You can use theorem, exercise, problem, or question here.  Modify x.yz to be whatever number you are proving
+
+    $$P_1 \left(f\right) \equiv \left\{ \forall M \in \mathbb{R}, \exists x \in \mathbb{R} \text{ such that } f(x) > M \right\}$$
+
+    $$P_6 \left(f\right) \equiv \left\{ \exists (M, K) \in \mathbb{R}^2, \text{ such that } \forall x > K, f(x) > M \right\}$$
+
+\end{problem}
+
+\begin{solution} The negation of $p$ is
+
+	$$ \lnot p \equiv \{ \exists n \in \mathbb{Z}, \forall m \in \mathbb{Z} \text{ such that } 4n + 3m \neq 0 \text{ and } 4n + 3m \neq 1 \}. $$
+
+
+\end{solution}
+
+
+\begin{proof} We might do something.
+
+
+
+\end{proof}
+
+
+\noindent While working on this proof, we received no external assistance aside from advice from Professor Mehmetaj.
+
+\end{document}

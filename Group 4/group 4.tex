@@ -54,7 +54,7 @@
 
     Prove or disprove
 
-    $$ \left\{ \forall f \text{ satisfying } P_6, f \text{ satisfies } P_1 \right\}. $$
+    $$ \{ \forall f \text{ satisfying } P_6, f \text{ satisfies } P_1 \}. $$
 
 \end{problem}
 
@@ -64,9 +64,32 @@
 
     Let $f_0(x) = 2$. Set $M = 1$ and $K = 1$. Let $x$ be any real number larger than $K$. We can observe that $f_0(x) = 2 > M$ for all $x$ in this case.
 
-    Let $f_1(x) = x$. Set $M = 1$ and $K = 1$. Let $x$ be any real number larger than $K$. Then we get 
+    Let $f_1(x) = x$. Set $M = 0$ and $K = 1$. Let $x$ be any real number larger than $K$. We can see that $K > M$. We know that $f_1(x) = x > K$, so $f_1(x) > M$ holds for positive linear and other increasing functions.
+
+    %Let $f_2(x) = -x$. Set $M = 0$ and $K = 1$. Let $x$ be any real number %larger than $K$. Since $x > K$, we can see that $f(x) < K$ since $x$
+
+
 
 \end{example}
+
+\begin{proof} We will disprove the statement. The negation of the statement is as follows:
+
+    $$\{ \exists f \text{ that satisfies } P_6 \text{ and satisfies } \lnot P_1 \}$$
+
+    The negation of $P_1$ is:
+
+    $$\lnot P_1 \equiv \{ \exists M \in \mathbb{R} \text{ such that } \forall x \in \mathbb{R}, f(x) \leq M\}$$
+
+    Set $f_0 = \sin(x)$. Set $(M_0, K_0) = (-2, 0)$. Let $x_0$ be any real number greater than $K$. We know that $-1 \leq \sin(n) \leq 1$ for any real number $n$, so $f_0(x_0) = \sin(x_0) \geq -1$.
+
+    We know that $-1 > -2$, so $f_0(x) > -2 = M$. Thus, $f_0(x)$ satisfies $P_6.$
+
+    Set $(M_0, K_0) = (2, 0)$. Let $x_0$ be any real number. Since $-1 \leq \sin(n) \leq 1$ for any real number $n$, so $f_0(x_0) = \sin(x_0) \leq 1$.
+
+    We know that $2 > 1$, so $f_0(x) < 2 = M$. Thus, $f_0(x)$ satisfies $\lnot P_1$. 
+
+
+\end{proof}
 
 
 \noindent While working on this proof, we received no external assistance aside from advice from Professor Mehmetaj.

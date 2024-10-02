@@ -24,6 +24,8 @@
 \item[\hskip \labelsep {\bfseries #1}\hskip \labelsep {\bfseries #2.}]}{\end{trivlist}}
 \newenvironment{corollary}[2][Corollary]{\begin{trivlist}
 \item[\hskip \labelsep {\bfseries #1}\hskip \labelsep {\bfseries #2.}]}{\end{trivlist}}
+\newenvironment{example}[2][Example]{\begin{trivlist}
+\item[\hskip \labelsep {\bfseries #1}\hskip \labelsep {\bfseries #2.}]}{\end{trivlist}}
 
 % Solutions use a modified proof environment
 \newenvironment{solution}
@@ -46,9 +48,9 @@
 
 \begin{problem}{4a} %You can use theorem, exercise, problem, or question here.  Modify x.yz to be whatever number you are proving
 
-    $$P_1 \left(f\right) \equiv \left\{ \forall M \in \mathbb{R}, \exists x \in \mathbb{R} \text{ such that } f(x) > M \right\}$$
+    $$P_1 (f) \equiv \left\{ \forall M \in \mathbb{R}, \exists x \in \mathbb{R} \text{ such that } f(x) > M \right\}$$
 
-    $$P_6 \left(f\right) \equiv \left\{ \exists (M, K) \in \mathbb{R}^2, \text{ such that } \forall x > K, f(x) > M \right\}$$
+    $$P_6 (f) \equiv \left\{ \exists (M, K) \in \mathbb{R}^2, \text{ such that } \forall x > K, f(x) > M \right\}$$
 
     Prove or disprove
 
@@ -56,13 +58,15 @@
 
 \end{problem}
 
-\begin{proof} We will prove the statement is true.
-
-    Let $f_0$ be any function satisfying $P_6$. Let $\left(M, K\right)$ be any ordered pair in $\mathbb{R}^2$ such that $f_0$ satisfies $P_6$.
+\begin{example}{1} It is fairly obvious that $P_1$ means the function is unbounded from above. To better understand the problem, we'll try to find functions that satisfy $P_6$.
 
 
 
-\end{proof}
+    Let $f_0(x) = 2$. Set $M = 1$ and $K = 1$. Let $x$ be any real number larger than $K$. We can observe that $f_0(x) = 2 > M$ for all $x$ in this case.
+
+    Let $f_1(x) = x$. Set $M = 1$ and $K = 1$. Let $x$ be any real number larger than $K$. Then we get 
+
+\end{example}
 
 
 \noindent While working on this proof, we received no external assistance aside from advice from Professor Mehmetaj.

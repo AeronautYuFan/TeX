@@ -1,0 +1,83 @@
+
+% --------------------------------------------------------------
+% This is all preamble stuff that you don't have to worry about.
+% Head down to where it says "Start here"
+% --------------------------------------------------------------
+
+\documentclass[12pt]{article}
+ 
+\usepackage[margin=1in]{geometry} 
+\usepackage{amsmath,amsthm,amssymb}
+\usepackage{comment}
+ 
+
+ 
+\newenvironment{theorem}[2][Theorem]{\begin{trivlist}
+\item[\hskip \labelsep {\bfseries #1}\hskip \labelsep {\bfseries #2.}]}{\end{trivlist}}
+\newenvironment{lemma}[2][Lemma]{\begin{trivlist}
+\item[\hskip \labelsep {\bfseries #1}\hskip \labelsep {\bfseries #2.}]}{\end{trivlist}}
+\newenvironment{exercise}[2][Exercise]{\begin{trivlist}
+\item[\hskip \labelsep {\bfseries #1}\hskip \labelsep {\bfseries #2.}]}{\end{trivlist}}
+\newenvironment{problem}[2][Problem]{\begin{trivlist}
+\item[\hskip \labelsep {\bfseries #1}\hskip \labelsep {\bfseries #2.}]}{\end{trivlist}}
+\newenvironment{question}[2][Question]{\begin{trivlist}
+\item[\hskip \labelsep {\bfseries #1}\hskip \labelsep {\bfseries #2.}]}{\end{trivlist}}
+\newenvironment{corollary}[2][Corollary]{\begin{trivlist}
+\item[\hskip \labelsep {\bfseries #1}\hskip \labelsep {\bfseries #2.}]}{\end{trivlist}}
+
+% Solutions use a modified proof environment
+\newenvironment{solution}
+               {\let\oldqedsymbol=\qedsymbol
+                \renewcommand{\qedsymbol}{$\blacktriangleleft$}
+                \begin{proof}[\textit\upshape Solution]}
+               {\end{proof}
+                \renewcommand{\qedsymbol}{\oldqedsymbol}}
+ 
+\begin{document}
+
+% --------------------------------------------------------------
+%                         Start here
+% --------------------------------------------------------------
+
+\title{Individual 4}%replace X with the appropriate number
+\author{Yu Fan Mei\\ %replace with your name
+	Introduction to Proof and Problem Solving} %if necessary, replace with your course title
+
+\maketitle
+
+\begin{problem}{12} %You can use theorem, exercise, problem, or question here.  Modify x.yz to be whatever number you are proving
+    (1) Consider the statement
+    $$p \equiv \{\forall M \in \mathbb{R}, \exists K \in \mathbb{R}\,\, \text{s.t.} \,\,\forall x > K,
+    f(x) > M\}.$$
+    \begin{enumerate}
+    \item[(a)] Write $\neg p$.
+    \item[(b)] Consider the function $f$ from $\mathbb{R}$ into $\mathbb{R}$ defined by
+    $$f(x) = \begin{cases}
+    \frac{1}{x} & x \neq 0\\
+    0 & x = 0
+    \end{cases}.$$
+    \end{enumerate}
+    Does $f$ satisfy $p$ or $\neg p$? Prove your answer.
+    
+
+\end{problem}
+
+\begin{solution}
+
+    (a) The negation of $p$ is
+
+    $$\lnot p \equiv \{ \exists M \in \mathbb{R} \text{ such that } \forall K \in \mathbb{R}, \exists x < K \text{ such that } f(x) \leq M\}$$
+\end{solution}
+
+\begin{proof}
+    
+    We will do something...
+
+
+
+\end{proof}
+
+
+\noindent While working on this proof, I received no external assistance aside from advice from Professor Mehmetaj.
+
+\end{document}

@@ -48,12 +48,34 @@
 \begin{problem}{12} %You can use theorem, exercise, problem, or question here.  Modify x.yz to be whatever number you are proving
     Show the function $f$ mapping $\mathbb{Z}$ into $S = \mathbb{Z} $ is one-to-one or find two integers $n_1$ and $n_2$ such that $n_1 \neq n_2$ but $f(n_1) = f(n_2)$, where
 
+    $$f(n) = 
+        \begin{cases} 
+        0.5n + 3 & \text{if } n \in E \\ 
+        3n - 1 & \text{if } n \in O 
+        \end{cases}$$
+
+
     
     
 
 \end{problem}
 
-\begin{proof} We will prove something...
+\begin{proof} Suppose this is true. Set $n_1 = -2$ and $n_2 = 1$. Since $n_1$ is even, 
+    \begin{align*} 
+        f(n_1) & = 0.5n_1 + 3 \\
+        f(n_1) & = 2.
+    \end{align*}
+    
+    Since $n_2$ is odd
+
+    \begin{align*} 
+        f(n_2) & = 3n_2 - 1 \\
+        f(n_2) & = 2
+    \end{align*}
+
+    We can observe that $f(n_1) = f(n_2)$. Additionally, since $n_1 \neq n_2$, this function is not one-to-one.
+
+
 \end{proof}
 
 

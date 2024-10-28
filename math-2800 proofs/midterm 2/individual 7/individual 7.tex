@@ -87,11 +87,9 @@ Before we prove this, we will need a lemma.
 
 \begin{proof} We will prove problem 1 using induction. \\ \\
     Base Case: Set $n = n_0 = 1$. Then
-    $$(n^3 - n)(n + 2) = 0.$$
+    $$(n_0^3 - n_0)(n_0 + 2) = 0 = 12(0).$$
 
-    This is clearly true, since 0 can be written as $12(0)$, and is thus divisible by 12. \\ \\
-
-    Inductive Step: Assume there exists integers $n \geq 1$ and $k_0$ such that
+    \noindent Inductive Step: Assume there exists an integer $n \geq 1$ and $k_0$ such that
 
     $$(n^3 - n)(n + 2) = 12k_0.$$
 
@@ -110,13 +108,7 @@ Before we prove this, we will need a lemma.
 
     $$12k_0 + 4n_0^3 + 4n_0^2 + 8n_0^2 + 8n_0 = 12j_0.$$
 
-    Utilizing grouping, we can factor out $4n_0(n_0 + 1)$, and are left with
-
-    $$12k_0 + 4n_0(n_0 + 1)(n_0 + 2) = 12j_0.$$
-
-    By lemma 1, $n_0(n_0 + 1)$ is even, and can be rewritten as $2m_0$, with $m_0$ being an integer. When we substitute this in, we get
-
-    $$12k_0 + 8m_0(n_0 + 2) = 12j_0.$$
+    Thus, we have proven what we needed to prove.
 
 
 \end{proof}

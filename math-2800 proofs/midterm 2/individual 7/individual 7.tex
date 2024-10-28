@@ -77,21 +77,21 @@
     We want to show that this is true for $n + 1$, meaning we want to show that there exists an integer $j_0$ such that
     $$((n+1)^3 - (n+1))((n+1) + 2) = 12j_0.$$
 
-    Set $j_0 = \text{(something)}.$ When we unfactor the equation above, we geometry
+    Set $j_0 = \text{(something)}.$ When we unfactor the equation above, we get
 
     $$n_0^4 + 6n_0^3 + 11n_0^2 + 6n_0 = 12j_0.$$
 
     When we substitute in $12k_0$, we get 
 
-    $$12k_0 + 4n_0^3 + 12n_0^2 + 8n_0.$$
+    $$12k_0 + 4n_0^3 + 12n_0^2 + 8n_0 = 12j_0.$$
 
     We can rewrite the statement like this:
 
-    $$12k_0 + 4n_0^3 + 4n_0^2 + 8n_0^2 + 8n_0.$$
+    $$12k_0 + 4n_0^3 + 4n_0^2 + 8n_0^2 + 8n_0 = 12j_0.$$
 
     Utilizing grouping, we can factor out $4n_0(n_0 + 1)$, and are left with
 
-    $$12k_0 + 4n_0(n_0 + 1)(n_0 + 2) = 12j_0$$
+    $$12k_0 + 4n_0(n_0 + 1)(n_0 + 2) = 12j_0.$$
 
     By lemma 1, $n_0(n_0 + 1)$ is even, and can be rewritten as $2m_0$, with $m_0$ being an integer. When we substitute this in, we get
 
@@ -116,7 +116,17 @@
 
 \begin{proof} We will prove this using mathematical induction. \\ \\
 
-    Base Case: Set $n_0 = 0.$
+    Base Case: Set $n_0 = 0.$ Then $$\sum_{i=0}^{n_0} r^i = r^0 = 1 = \frac{1 - r^{n_0+1}}{1 - r}.$$
+
+    This statement is clearly true.
+
+    Inductive Step: Assume there exists a nonnegative integer $n_0$ such that for every real number $r$ aside from 0 and 1,
+
+    $$\sum_{i=0}^{n_0} r^i = \frac{1 - r^{n_0+1}}{1 - r}.$$
+
+    We want to show that this is true for $n+1$, so we need to show that
+
+    $$\sum_{i=0}^{n_0} r^i + r^{n_0+1} = \sum_{i=0}^{n_0 + 1} r^i.$$
 
 
 \end{proof}

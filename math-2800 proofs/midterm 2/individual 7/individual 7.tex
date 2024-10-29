@@ -159,14 +159,13 @@ Before we prove this, we will need a lemma.
 
     We can multiply $r^{n_0+1}$ by $(1-r)/(1-r)$ to get a common denominator:
 
-    $$\frac{1 - r^{n_0+1} + r^{n_0+1}(1-r)}{1 - r} = \sum_{i=0}^{n_0 + 1} r^i.$$
-
-    And then
-
-
+    \begin{align*}
+        \sum_{i=0}^{n_0 + 1} r^i & = \frac{1 - r^{n_0+1} + r^{n_0+1}(1-r)}{1 - r} \\
+        & = \frac{1 - r^{n_0+1} + r^{n_0+1} - r^{n_0+2}}{1 - r} \\
+        & = \frac{1 - r^{n_0+2}}{1 - r}. \\
+    \end{align*}
 
     Thus, we have proven this is true.
-
 
 \end{proof}
 

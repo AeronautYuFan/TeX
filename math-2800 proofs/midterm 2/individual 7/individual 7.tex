@@ -153,11 +153,17 @@ Before we prove this, we will need a lemma.
 
     $$\sum_{i=0}^{n_0} r^i + r^{n_0+1} = \sum_{i=0}^{n_0 + 1} r^i.$$
 
-    By our inductive hypothesis, we can rewrite the left side of the equation
+    By our inductive hypothesis, we can rewrite the left side of the equation as
 
     $$\frac{1 - r^{n_0+1}}{1 - r} + r^{n_0+1} = \sum_{i=0}^{n_0 + 1} r^i.$$
 
-    
+    We can multiply $r^{n_0+1}$ by $(1-r)/(1-r)$ to get a common denominator:
+
+    $$\frac{1 - r^{n_0+1} + r^{n_0+1}(1-r)}{1 - r} = \sum_{i=0}^{n_0 + 1} r^i.$$
+
+    And then
+
+
 
     Thus, we have proven this is true.
 

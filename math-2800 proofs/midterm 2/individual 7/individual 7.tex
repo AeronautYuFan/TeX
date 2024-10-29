@@ -149,9 +149,17 @@ Before we prove this, we will need a lemma.
 
     $$\sum_{i=0}^{n_0} r^i = \frac{1 - r^{n_0+1}}{1 - r}.$$
 
-    We want to show that this is true for $n+1$, so we need to show that
+    We want to show that this is true for $n_0+1$, so we need to show that
 
     $$\sum_{i=0}^{n_0} r^i + r^{n_0+1} = \sum_{i=0}^{n_0 + 1} r^i.$$
+
+    By our inductive hypothesis, we can rewrite the left side of the equation
+
+    $$\frac{1 - r^{n_0+1}}{1 - r} + r^{n_0+1} = \sum_{i=0}^{n_0 + 1} r^i.$$
+
+    
+
+    Thus, we have proven this is true.
 
 
 \end{proof}

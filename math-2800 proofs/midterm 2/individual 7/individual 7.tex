@@ -142,30 +142,32 @@ Before we prove this, we will need a lemma.
 
 \end{problem}
 
-\begin{proof} We will prove this using mathematical induction. \\ \\
+\noindent We will prove this using mathematical induction.
 
-    Base Case: Set $n_0 = 0.$ Then $$\sum_{i=0}^{n_0} r^i = r^0 = 1 = \frac{1 - r^{n_0+1}}{1 - r}.$$
+\begin{proof} Let $r_0$ be an arbitrary real number other than 0 and 1. \\ \\
+
+    \noindent Base Case: Set $n_0 = 0.$ Then $$\sum_{i=0}^{n_0} r_0^i = r_0^0 = 1 = \frac{1 - r_0^{n_0+1}}{1 - r_0}.$$
 
     This statement is clearly true.
 
-    Inductive Step: Assume there exists a nonnegative integer $n_0$ such that for every real number $r$ aside from 0 and 1,
+    \noindent Inductive Step: Assume there exists a nonnegative integer $n_0$ such that for every real number $r$ aside from 0 and 1,
 
-    $$\sum_{i=0}^{n_0} r^i = \frac{1 - r^{n_0+1}}{1 - r}.$$
+    $$\sum_{i=0}^{n_0} r^i = \frac{1 - r_0^{n_0+1}}{1 - r_0}.$$
 
     We want to show that this is true for $n_0+1$, so we need to show that
 
-    $$\sum_{i=0}^{n_0} r^i + r^{n_0+1} = \sum_{i=0}^{n_0 + 1} r^i.$$
+    $$\sum_{i=0}^{n_0} r_0^i + r_0^{n_0+1} = \sum_{i=0}^{n_0 + 1} r_0^i.$$
 
     By our inductive hypothesis, we can rewrite the left side of the equation as
 
-    $$\frac{1 - r^{n_0+1}}{1 - r} + r^{n_0+1} = \sum_{i=0}^{n_0 + 1} r^i.$$
+    $$\frac{1 - r_0^{n_0+1}}{1 - r_0} + r_0^{n_0+1} = \sum_{i=0}^{n_0 + 1} r_0^i.$$
 
-    We can multiply $r^{n_0+1}$ by $(1-r)/(1-r)$ to get a common denominator:
+    We can multiply $r_0^{n_0+1}$ by $(1-r_0)/(1-r_0)$ to get a common denominator:
 
     \begin{align*}
-        \sum_{i=0}^{n_0 + 1} r^i & = \frac{1 - r^{n_0+1} + r^{n_0+1}(1-r)}{1 - r} \\
-        & = \frac{1 - r^{n_0+1} + r^{n_0+1} - r^{n_0+2}}{1 - r} \\
-        & = \frac{1 - r^{n_0+2}}{1 - r}. \\
+        \sum_{i=0}^{n_0 + 1} r^i & = \frac{1 - r_0^{n_0+1} + r_0^{n_0+1}(1-r_0)}{1 - r_0} \\
+        & = \frac{1 - r_0^{n_0+1} + r_0^{n_0+1} - r_0^{n_0+2}}{1 - r_0} \\
+        & = \frac{1 - r_0^{n_0+2}}{1 - r_0}. \\
     \end{align*}
 
     Thus, we have proven this is true.

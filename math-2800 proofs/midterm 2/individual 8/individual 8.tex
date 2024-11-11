@@ -50,7 +50,28 @@
 \end{problem}
 
 \begin{proof}
-    Set $\epsilon_0 = a$. Let 
+    We will prove $\lim_{x\to 4} f(x)\neq $ using cases. Set $\epsilon_0 = 2$. Let $\delta_0$ be an arbitrary real number greater than 0.
+
+    We will consider cases:
+
+    \noindent Case 1: $L_0 > 3$. Set $x = x_0 = 4 + 2\delta/3$. Then, $x$ clearly is greater than 0 and less than $\delta_0$:
+
+    $$0 < |x_0 - 4| = |4 + \frac{2\delta_0}{3} - 4| = |\frac{2\delta_0}{3}| = \frac{2\delta_0}{3}.$$.
+
+    Since $x_0 > 4$, 
+
+    \begin{align*}
+        |f(x_0) - L_0| & = |\frac{3}{2}x_0 - 2 - L_0| \\
+        & = |\frac{3}{2}(4 + \frac{2\delta_0}{3}) - 2 - L_0| \\
+        & = |4 + \delta_0 - L_0|.
+    \end{align*}
+
+    Since $L_0 > 3$, we know that $-L_0 < 3$. Adding 4 to both sides, we can see that $4-L_0 < 7$. So,
+
+    \[4 + \delta_0 - L_0 >  \]
+
+
+
 \end{proof}
 
 \noindent While working on this proof, I received no external assistance aside from advice from Professor Mehmetaj.

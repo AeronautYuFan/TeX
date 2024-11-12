@@ -54,7 +54,7 @@
 
     We will consider cases:
 
-    \noindent Case 1: $L_0 > 3$. Set $x = x_0 = 4 + 2\delta/3$. Then, $x$ clearly is greater than 0 and less than $\delta_0$:
+    \noindent Case 1: $L_0 < 3$. Set $x = x_0 = 4 + 2\delta/3$. Then, $|x_0 - 4|$ clearly is greater than 0 and less than $\delta_0$:
 
     $$0 < |x_0 - 4| = |4 + \frac{2\delta_0}{3} - 4| = |\frac{2\delta_0}{3}| = \frac{2\delta_0}{3}.$$.
 
@@ -66,11 +66,21 @@
         & = |4 + \delta_0 - L_0|.
     \end{align*}
 
-    Since $L_0 > 3$, we know that $-L_0 < 3$. Adding 4 to both sides, we can see that $4-L_0 < 7$. So,
+    Since $L_0 < 3$, we know that $-L_0 > 3$. Adding 4 to both sides, we can see that $4-L_0 > 7$. So, $|4 + \delta_0 - L_0| =  4 + \delta_0 - L_0 > 7 > \epsilon_0$. So, the limit is not $L_0 < 3$. \\ \\
 
-    \[4 + \delta_0 - L_0 >  \]
+    \noindent Case 2: $L_0 \geq 3$. Set $x = x_0 = 4 - \delta/2$. Then, $|x_0 - 4|$ clearly is greater than 0 and less than $\delta_0$:
 
+    $$0 < |x_0 + 4| = |4 - \frac{\delta_0}{2} - 4| = |-\frac{\delta_0}{2}| = \frac{\delta_0}{2}.$$.
 
+    Since $x_0 < 4$,
+
+    \begin{align*}
+        |f(x_0) - L_0| & = |x_0 - 2 - L_0| \\
+        & = |4 - \frac{\delta_0}{2} - 2 - L_0 \\
+        & = |2 - \frac{\delta_0}{2} - L_0.
+    \end{align*}
+
+    since $L_0 \geq 3$, we know that $-L_0$
 
 \end{proof}
 

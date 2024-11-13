@@ -58,19 +58,19 @@
 
     \[ f(x) - L_0 < \epsilon.\]
 
-    \noindent Set $\epsilon_0 = b$. Let $\delta_0$ be any real number greater than 0. Set $x_1 = 4 - \delta_0/2$ and $x_2 = 4 + \delta_0/2$. Then as demonstrated below, we know that $x_1 < \delta_0$ and $x_2 < \delta_0$:
+    \noindent Set $\epsilon_0 = 3$. Let $\delta_0$ be any real number greater than 0. Set $x_1 = 4 - \delta_0/2$ and $x_2 = 4 + 2\delta_0/3$. Then as demonstrated below, we know that $x_1 < \delta_0$ and $x_2 < \delta_0$:
     
     \[ 0 < |x_1 - 4| = \left| 4 - \frac{\delta_0}{2} - 4 \right| = \left|- \frac{\delta_0}{2} \right| = \frac{\delta_0}{2} < \delta_0, \]
 
     and
 
-    \[ 0 < |x_1 - 4| = \left| 4 + \frac{\delta_0}{2} - 4 \right| = \left| \frac{\delta_0}{2} \right| = \frac{\delta_0}{2} < \delta_0, \]
+    \[ 0 < |x_2 - 4| = \left| 4 + \frac{2\delta_0}{3} - 4 \right| = \left| \frac{2\delta_0}{3} \right| = \frac{2\delta_0}{3} < \delta_0, \]
 
     \noindent By the triangle inequality, we know that
 
     \begin{align*}
-        |f(x_1) - f(x_2)| & = |f(x_1) - L_0 + L_0 - f(x_2)| \\
-        & \leq |f(x_1) - L_0| + |L_0 - f(x_2)| \tag{1} \\
+        |f(x_1) - f(x_2)| & = |f(x_1) - L_0 + L_0 - f(x_2)| \tag{1}\\
+        & \leq |f(x_1) - L_0| + |L_0 - f(x_2)| \\
         & = |f(x_1) - L_0| + |-(f(x_2) - L_0) |
     \end{align*}
 
@@ -78,8 +78,21 @@
 
     \begin{align*}
         |f(x_1) - f(x_2)| & < \epsilon_0 + \epsilon_0 \\
-        & = 2\epsilon_0 = .
+        & = 2\epsilon_0 = 6.
     \end{align*} % come back here
+
+    But since $x_1 \leq 4$ and $x_2 > 4$,
+
+    \begin{align*}
+        |f(x_1) - f(x_2)| & = \left|x_1 - 2 - \left(\frac{3}{2}x_2 - 2\right)\right| \tag{2}\\
+        & = \left| \left(4 - \frac{\delta_0}{2}\right) - 2 - \frac{3}{2}\left(4 + \frac{2\delta_0}{3}\right) - 2 \right| \\
+        & = \left| -\frac{3\delta_0}{2} - 6 \right| \\
+        & = \left| -\left(\frac{3\delta_0}{2} + 6\right) \right| \\
+        & = \frac{3\delta_0}{2} + 6 \\
+        & > 6.
+    \end{align*}
+
+    Combining (1) and (2), we get $6 < |f(x_1) - f(x_2)| < 6$, which is a contradiction. Thus, we have proven that $\lim_{x\to 4} f(x) $ does not exist.
 
     
 

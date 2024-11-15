@@ -1,5 +1,5 @@
 # Fdb version 4
-["pdflatex"] 1731364901.33921 "c:/Users/Aeron/Documents/Repos/TeX/math-2800 proofs/midterm 2/individual 8/individual 8.tex" "individual 8.pdf" "individual 8" 1731364902.01276 0
+["pdflatex"] 1731463482.14816 "c:/Users/Aeron/Documents/Repos/TeX/math-2800 proofs/midterm 2/individual 8/individual 8.tex" "individual 8.pdf" "individual 8" 1731463482.62568 0
   "C:/Users/Aeron/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map" 1730427337 80909 eab91d9745dd2edfd62a31d53cd5fe15 ""
   "C:/Users/Aeron/AppData/Local/MiKTeX/miktex/data/le/pdftex/pdflatex.fmt" 1730427297 11948316 e042cc6d779bf190967185cc980c2ef9 ""
   "C:/Users/Aeron/AppData/Local/Programs/MiKTeX/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm" 1233951848 1004 54797486969f23fa377b128694d548df ""
@@ -31,6 +31,7 @@
   "C:/Users/Aeron/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb" 1247596667 32569 5e5ddc8df908dea60932f3c484a54c0d ""
   "C:/Users/Aeron/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy8.pfb" 1247596667 32626 5abc8bb2f28aa647d4c70f8ea38cc0d3 ""
   "C:/Users/Aeron/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmti12.pfb" 1247596667 36118 fad905eba93cff5bce1e185fe980a177 ""
+  "C:/Users/Aeron/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/symbols/msbm10.pfb" 1247596673 34694 870c211f62cb72718a00e353f14f254d ""
   "C:/Users/Aeron/AppData/Local/Programs/MiKTeX/tex/generic/iftex/iftex.sty" 1643997108 7237 bdd120a32c8fdb4b433cf9ca2e7cd98a ""
   "C:/Users/Aeron/AppData/Local/Programs/MiKTeX/tex/generic/iftex/ifvtex.sty" 1643997108 1057 525c2192b5febbd8c1f662c9468335bb ""
   "C:/Users/Aeron/AppData/Local/Programs/MiKTeX/tex/latex/amscls/amsthm.sty" 1591023609 12594 0d51ac3a545aaaa555021326ff22a6cc ""
@@ -50,9 +51,9 @@
   "C:/Users/Aeron/AppData/Local/Programs/MiKTeX/tex/latex/geometry/geometry.sty" 1578053545 42759 9cf6c5257b1bc7af01a58859749dd37a ""
   "C:/Users/Aeron/AppData/Local/Programs/MiKTeX/tex/latex/graphics/keyval.sty" 1718270727 2671 70891d50dac933918b827d326687c6e8 ""
   "C:/Users/Aeron/AppData/Local/Programs/MiKTeX/tex/latex/l3backend/l3backend-pdftex.def" 1716480499 29785 9f93ab201fe5dd053afcc6c1bcf7d266 ""
-  "c:/Users/Aeron/Documents/Repos/TeX/math-2800 proofs/midterm 2/individual 8/individual 8.tex" 1731364900 3480 b0abc476887c92fa9a163f28e8a06b61 ""
-  "individual 8.aux" 1731364901 32 044b7f8fc9779af7531264e0c5c84b6d "pdflatex"
-  "individual 8.tex" 1731364900 3480 b0abc476887c92fa9a163f28e8a06b61 ""
+  "c:/Users/Aeron/Documents/Repos/TeX/math-2800 proofs/midterm 2/individual 8/individual 8.tex" 1731463481 4312 51d44360026af55838beca436b2f5790 ""
+  "individual 8.aux" 1731463482 32 044b7f8fc9779af7531264e0c5c84b6d "pdflatex"
+  "individual 8.tex" 1731463481 4312 51d44360026af55838beca436b2f5790 ""
   (generated)
   "individual 8.aux"
   "individual 8.log"

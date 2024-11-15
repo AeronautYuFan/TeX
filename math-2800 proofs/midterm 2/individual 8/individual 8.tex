@@ -50,37 +50,51 @@
 \end{problem}
 
 \begin{proof}
-    We will prove $\lim_{x\to 4} f(x)\neq $ using cases. Set $\epsilon_0 = 2$. Let $\delta_0$ be an arbitrary real number greater than 0.
+    We will prove $\lim_{x\to 4} f(x) $ does not exist using a proof by contradiction. Suppose that the limit did exist, that $\lim_{x\to 4} f(x) = L_0$ for some $L_0$. Then for every $\epsilon > 0$, there exists a real number $\delta > 0$ such that for all real numbers $x \in \mathbb{R}$ that satisfy the condition
 
-    We will consider cases:
+    \[0 < |x - 4| < \delta,\]
 
-    \noindent Case 1: $L_0 < 3$. Set $x = x_0 = 4 + 2\delta/3$. Then, $|x_0 - 4|$ clearly is greater than 0 and less than $\delta_0$:
+    the following condition is also satisfied:
 
-    $$0 < |x_0 - 4| = |4 + \frac{2\delta_0}{3} - 4| = |\frac{2\delta_0}{3}| = \frac{2\delta_0}{3}.$$.
+    \[ f(x) - L_0 < \epsilon.\]
 
-    Since $x_0 > 4$, 
+    \noindent Set $\epsilon_0 = 3$. Let $\delta_0$ be any real number greater than 0. Set $x_1 = 4 - \delta_0/2$ and $x_2 = 4 + 2\delta_0/3$. Then as demonstrated below, we know that $x_1 < \delta_0$ and $x_2 < \delta_0$:
+    
+    \[ 0 < |x_1 - 4| = \left| 4 - \frac{\delta_0}{2} - 4 \right| = \left|- \frac{\delta_0}{2} \right| = \frac{\delta_0}{2} < \delta_0, \]
 
-    \begin{align*}
-        |f(x_0) - L_0| & = |\frac{3}{2}x_0 - 2 - L_0| \\
-        & = |\frac{3}{2}(4 + \frac{2\delta_0}{3}) - 2 - L_0| \\
-        & = |4 + \delta_0 - L_0|.
-    \end{align*}
+    and
 
-    Since $L_0 < 3$, we know that $-L_0 > 3$. Adding 4 to both sides, we can see that $4-L_0 > 7$. So, $|4 + \delta_0 - L_0| =  4 + \delta_0 - L_0 > 7 > \epsilon_0$. So, the limit is not $L_0 < 3$. \\ \\
+    \[ 0 < |x_2 - 4| = \left| 4 + \frac{2\delta_0}{3} - 4 \right| = \left| \frac{2\delta_0}{3} \right| = \frac{2\delta_0}{3} < \delta_0, \]
 
-    \noindent Case 2: $L_0 \geq 3$. Set $x = x_0 = 4 - \delta/2$. Then, $|x_0 - 4|$ clearly is greater than 0 and less than $\delta_0$:
-
-    $$0 < |x_0 + 4| = |4 - \frac{\delta_0}{2} - 4| = |-\frac{\delta_0}{2}| = \frac{\delta_0}{2}.$$.
-
-    Since $x_0 < 4$,
+    \noindent By the triangle inequality, we know that
 
     \begin{align*}
-        |f(x_0) - L_0| & = |x_0 - 2 - L_0| \\
-        & = |4 - \frac{\delta_0}{2} - 2 - L_0 \\
-        & = |2 - \frac{\delta_0}{2} - L_0.
+        |f(x_1) - f(x_2)| & = |f(x_1) - L_0 + L_0 - f(x_2)| \tag{1}\\
+        & \leq |f(x_1) - L_0| + |L_0 - f(x_2)| \\
+        & = |f(x_1) - L_0| + |-(f(x_2) - L_0) |
     \end{align*}
 
-    since $L_0 \geq 3$, we know that $-L_0$
+    Since the limit exists, $|f(x_1) - L_0| < \epsilon_0$ and $|f(x_2) - L_0| < \epsilon_0$. Then, using the above inequality, we know that
+
+    \begin{align*}
+        |f(x_1) - f(x_2)| & < \epsilon_0 + \epsilon_0 \\
+        & = 2\epsilon_0 = 6.
+    \end{align*} % come back here
+
+    But since $x_1 \leq 4$ and $x_2 > 4$,
+
+    \begin{align*}
+        |f(x_1) - f(x_2)| & = \left|x_1 - 2 - \left(\frac{3}{2}x_2 - 2\right)\right| \tag{2}\\
+        & = \left| \left(4 - \frac{\delta_0}{2}\right) - 2 - \frac{3}{2}\left(4 + \frac{2\delta_0}{3}\right) - 2 \right| \\
+        & = \left| -\frac{3\delta_0}{2} - 6 \right| \\
+        & = \left| -\left(\frac{3\delta_0}{2} + 6\right) \right| \\
+        & = \frac{3\delta_0}{2} + 6 \\
+        & > 6.
+    \end{align*}
+
+    Combining (1) and (2), we get $6 < |f(x_1) - f(x_2)| < 6$, which is a contradiction. Thus, we have proven that $\lim_{x\to 4} f(x) $ does not exist.
+
+    
 
 \end{proof}
 

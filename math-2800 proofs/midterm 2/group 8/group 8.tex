@@ -1,0 +1,68 @@
+\documentclass[12pt]{article}
+ 
+\usepackage[margin=1in]{geometry} 
+\usepackage{amsmath,amsthm,amssymb}
+\usepackage{comment}
+ 
+\newenvironment{theorem}[2][Theorem]{\begin{trivlist}
+\item[\hskip \labelsep {\bfseries #1}\hskip \labelsep {\bfseries #2.}]}{\end{trivlist}}
+\newenvironment{lemma}[2][Lemma]{\begin{trivlist}
+\item[\hskip \labelsep {\bfseries #1}\hskip \labelsep {\bfseries #2.}]}{\end{trivlist}}
+\newenvironment{exercise}[2][Exercise]{\begin{trivlist}
+\item[\hskip \labelsep {\bfseries #1}\hskip \labelsep {\bfseries #2.}]}{\end{trivlist}}
+\newenvironment{problem}[2][Problem]{\begin{trivlist}
+\item[\hskip \labelsep {\bfseries #1}\hskip \labelsep {\bfseries #2.}]}{\end{trivlist}}
+\newenvironment{question}[2][Question]{\begin{trivlist}
+\item[\hskip \labelsep {\bfseries #1}\hskip \labelsep {\bfseries #2.}]}{\end{trivlist}}
+\newenvironment{corollary}[2][Corollary]{\begin{trivlist}
+\item[\hskip \labelsep {\bfseries #1}\hskip \labelsep {\bfseries #2.}]}{\end{trivlist}}
+
+% Solutions use a modified proof environment
+\newenvironment{solution}
+               {\let\oldqedsymbol=\qedsymbol
+                \renewcommand{\qedsymbol}{$\blacktriangleleft$}
+                \begin{proof}[\textit\upshape Solution]}
+               {\end{proof}
+                \renewcommand{\qedsymbol}{\oldqedsymbol}}
+ 
+\begin{document}
+
+% --------------------------------------------------------------
+%                         Start here
+% --------------------------------------------------------------
+
+\title{Individual XXXX}%replace X with the appropriate number
+\author{Yu Fan Mei\\
+	Introduction to Proof and Problem Solving} %if necessary, replace with your course title
+
+\maketitle
+
+\begin{problem}{1}
+    1. Consider the function $f: \mathbb{R} \to \mathbb{R}$ defined by
+    \begin{equation*}
+        f(x) = \begin{cases}
+        \frac{1}{1- x} & x \neq 1 \\
+        0 & x = 1
+        \end{cases}.
+    \end{equation*}
+ 
+Is $f$ continuous at $1$? Prove your claim.
+\end{problem}
+
+\begin{proof}
+    We will prove that $f(x)$ is not continuous at $x = 1$ by using contradiction to show that the limit does not exist. Suppose the limit did exist, that there existed a number $L_0$ such that $\lim_{x \to 0} = L_0$. Then for every $\epsilon > 0$, there exists a real number $\delta > 0$ such that for all real numbers $x \in \mathbb{R}$ that satisfy the condition
+
+    \[0 < |x - 4| < \delta,\]
+
+    the following condition is also satisfied:
+
+    \[ f(x) - L_0 < \epsilon.\]
+
+    Set $\epsilon_0 = b$. Let $\delta_0$ be any real number greater than 0. Set $x_1 $
+
+\end{proof}
+
+
+\noindent While working on this proof, I received no external assistance aside from advice from Professor Mehmetaj.
+
+\end{document}

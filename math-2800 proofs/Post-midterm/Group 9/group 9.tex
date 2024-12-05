@@ -1,0 +1,77 @@
+\documentclass[12pt]{article}
+ 
+\usepackage[margin=1in]{geometry} 
+\usepackage{amsmath,amsthm,amssymb}
+\usepackage{comment}
+ 
+\newenvironment{theorem}[2][Theorem]{\begin{trivlist}
+\item[\hskip \labelsep {\bfseries #1}\hskip \labelsep {\bfseries #2.}]}{\end{trivlist}}
+\newenvironment{lemma}[2][Lemma]{\begin{trivlist}
+\item[\hskip \labelsep {\bfseries #1}\hskip \labelsep {\bfseries #2.}]}{\end{trivlist}}
+\newenvironment{exercise}[2][Exercise]{\begin{trivlist}
+\item[\hskip \labelsep {\bfseries #1}\hskip \labelsep {\bfseries #2.}]}{\end{trivlist}}
+\newenvironment{problem}[2][Problem]{\begin{trivlist}
+\item[\hskip \labelsep {\bfseries #1}\hskip \labelsep {\bfseries #2.}]}{\end{trivlist}}
+\newenvironment{question}[2][Question]{\begin{trivlist}
+\item[\hskip \labelsep {\bfseries #1}\hskip \labelsep {\bfseries #2.}]}{\end{trivlist}}
+\newenvironment{corollary}[2][Corollary]{\begin{trivlist}
+\item[\hskip \labelsep {\bfseries #1}\hskip \labelsep {\bfseries #2.}]}{\end{trivlist}}
+
+% Solutions use a modified proof environment
+\newenvironment{solution}
+               {\let\oldqedsymbol=\qedsymbol
+                \renewcommand{\qedsymbol}{$\blacktriangleleft$}
+                \begin{proof}[\textit\upshape Solution]}
+               {\end{proof}
+                \renewcommand{\qedsymbol}{\oldqedsymbol}}
+ 
+\begin{document}
+
+% --------------------------------------------------------------
+%                         Start here
+% --------------------------------------------------------------
+
+\title{Group 9}%replace X with the appropriate number
+\author{Sean Clavadetscher and Yu Fan Mei\\
+	Introduction to Proof and Problem Solving} %if necessary, replace with your course title
+
+\maketitle
+
+\begin{problem}{6}
+    Define the relation \(F\) on \(\mathbb{R}^2\) by  
+\[
+((x, y), (s, t)) \in F \iff x^2 - y = s^2 - t.
+\]
+
+(Hint: Make sure you work enough examples to understand what pairs of points are related and why.) 
+
+Show \(F\) is an equivalence relation or give a counterexample to one of the properties of an equivalence relation. If \(F\) is an equivalence relation, describe the equivalence classes for \(F\).
+\end{problem}
+
+\begin{proof}
+    We will prove that $F$ is an equivalence relation by proving that it is reflexive, symmetric, and transitive. We will first show that $F$ is reflexive:
+
+    Let $(x_0, y_0)$ be any point in $\mathbb{R}^2$. Then it follows that
+    $$x_0^2 - y_0^2 = x_0^2 - y_0^2.$$
+    
+    \noindent
+    Then $(x_0, y_0)F(x_0, y_0)$ holds true, and $F$ is reflexive. Next, we must prove that $F$ is symmetric:
+
+    Let $(x_0, y_0)$ and $(s_0, t_0)$ be any points in $\mathbb{R}^2$ such that $(x_0, y_0)F(s_0, t_0)$. By definition, $x_0^2 - y_0 = s_0^2 - t_0$. Then we know that 
+    
+    $$s_0^2 - t_0 = x_0^2 - y_0.$$
+
+    \noindent
+    This shows that $(s_0, t_0)F(x_0, y_0)$, and $F$ is symmetric. Finally, we must prove that $F$ is transitive:
+
+    Let $(x_0, y_0)$, $(s_0, t_0)$, and $(a_0, b_0)$ be any points in $\mathbb{R}^2$ such that $(x_0, y_0)F(s_0, t_0)$ and $(s_0, t_0)F(a_0, b_0)$. By definition, $x_0^2 - y_0 = s_0^2 - t_0$ and $s_0^2 - t_0 = a_0^2 - b_0$. Then it follows that
+    
+    $$x_0^2 - y_0 = a_0^2 - b_0.$$
+
+    By the definition of the relation, this means that $(x_0, y_0)F(a_0, b_0)$, and $F$ is transitive. Since $F$ is reflexive, symmetric, and transitive, $F$ is an equivalence relation.
+
+\end{proof}
+
+\noindent While working on this proof, we received no external assistance aside from advice from Professor Mehmetaj.
+
+\end{document}

@@ -1,0 +1,75 @@
+\documentclass[12pt]{article}
+ 
+\usepackage[margin=1in]{geometry} 
+\usepackage{amsmath,amsthm,amssymb}
+\usepackage{comment}
+ 
+\newenvironment{theorem}[2][Theorem]{\begin{trivlist}
+\item[\hskip \labelsep {\bfseries #1}\hskip \labelsep {\bfseries #2.}]}{\end{trivlist}}
+\newenvironment{lemma}[2][Lemma]{\begin{trivlist}
+\item[\hskip \labelsep {\bfseries #1}\hskip \labelsep {\bfseries #2.}]}{\end{trivlist}}
+\newenvironment{exercise}[2][Exercise]{\begin{trivlist}
+\item[\hskip \labelsep {\bfseries #1}\hskip \labelsep {\bfseries #2.}]}{\end{trivlist}}
+\newenvironment{problem}[2][Problem]{\begin{trivlist}
+\item[\hskip \labelsep {\bfseries #1}\hskip \labelsep {\bfseries #2.}]}{\end{trivlist}}
+\newenvironment{question}[2][Question]{\begin{trivlist}
+\item[\hskip \labelsep {\bfseries #1}\hskip \labelsep {\bfseries #2.}]}{\end{trivlist}}
+\newenvironment{corollary}[2][Corollary]{\begin{trivlist}
+\item[\hskip \labelsep {\bfseries #1}\hskip \labelsep {\bfseries #2.}]}{\end{trivlist}}
+
+% Solutions use a modified proof environment
+\newenvironment{solution}
+               {\let\oldqedsymbol=\qedsymbol
+                \renewcommand{\qedsymbol}{$\blacktriangleleft$}
+                \begin{proof}[\textit\upshape Solution]}
+               {\end{proof}
+                \renewcommand{\qedsymbol}{\oldqedsymbol}}
+ 
+\begin{document}
+
+% --------------------------------------------------------------
+%                         Start here
+% --------------------------------------------------------------
+
+\title{Individual 9}%replace X with the appropriate number
+\author{Yu Fan Mei\\
+	Introduction to Proof and Problem Solving} %if necessary, replace with your course title
+
+\maketitle
+
+\begin{problem}{1}
+    Show that  
+\[
+C((0, 1]) = C((0, 1))
+\]  
+by showing that the function  
+\[
+f(x) = 
+\begin{cases} 
+x & \text{if } x \neq \frac{1}{n} \text{ for any } n \in \mathbb{Z}^+ \\
+\frac{1}{n+1} & \text{if } x = \frac{1}{n} \text{ for some } n \in \mathbb{Z}^+
+\end{cases}
+\]
+is one-to-one from \((0, 1]\) onto \((0, 1)\). It might help to graph the function.
+\end{problem}
+
+Before we prove this, we will need a lemma.
+
+\begin{lemma}{1} 
+    For every class at Georgetown that is $\geq$ MATH-2000, you will get an $A$ or $A-.$
+\end{lemma}
+
+\begin{proof}
+    Let $X$ be a discrete random variable representing the number of classes you get an $A$ in. The rest of the proof is by magic. Thus, we have proven that this lemma is true.
+\end{proof}
+
+Now, we will prove problem 1 using something...
+
+\begin{proof} The proof is left as an exercise to the reader.
+
+\end{proof}
+
+
+\noindent While working on this proof, I received no external assistance aside from advice from Professor Mehmetaj.
+
+\end{document}

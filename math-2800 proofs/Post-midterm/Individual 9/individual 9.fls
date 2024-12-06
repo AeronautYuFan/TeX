@@ -1,6 +1,6 @@
-PWD c:\Users\Aeron\Documents\Repos\TeX\math-2800 proofs\Post-midterm
+PWD c:\Users\Aeron\Documents\Repos\TeX\math-2800 proofs\Post-midterm\Individual 9
 INPUT C:\Users\Aeron\AppData\Local\MiKTeX\miktex\data\le\pdftex\pdflatex.fmt
-INPUT c:\Users\Aeron\Documents\Repos\TeX\math-2800 proofs\Post-midterm\individual 9.tex
+INPUT c:\Users\Aeron\Documents\Repos\TeX\math-2800 proofs\Post-midterm\Individual 9\individual 9.tex
 OUTPUT individual 9.log
 INPUT C:\Users\Aeron\AppData\Local\Programs\MiKTeX\tex\latex\base\article.cls
 INPUT C:\Users\Aeron\AppData\Local\Programs\MiKTeX\tex\latex\base\article.cls

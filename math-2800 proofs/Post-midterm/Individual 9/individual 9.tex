@@ -55,7 +55,7 @@ is one-to-one from \((0, 1]\) onto \((0, 1)\). It might help to graph the functi
 
 \begin{proof} In order to prove these two sets have the same cardinality, we will prove that the function $f : (0, 1] \to (0, 1) $ is one-to-one and onto. We will first use a proof by contraposition to prove that $f$ is one-to-one. Let $x_1, x_2$ be any two real numbers within $(0, 1]$ such that $f(x_1) = f(x_2)$. Let's consider cases:
     
-    Case 1: Suppose $x_1, x_2 \neq 1/n$ for any $n \in \mathbb{Z}$. By definition, $f(x_1) = f(x_2),$ and it then follows that $x_1 = x_2$. 
+    Case 1: Suppose $x_1, x_2 \neq 1/n$ for any $n \in \mathbb{Z}^+$. By definition, $f(x_1) = f(x_2),$ and it then follows that $x_1 = x_2$. 
     
     Case 2: Suppose there exists positive integers $n_1, n_2$ such that $x_1 = 1/n_1$ and $x_2 = 1/n_2$. Since $f(x_1) = f(x_2)$, it follows that
 
@@ -67,7 +67,14 @@ is one-to-one from \((0, 1]\) onto \((0, 1)\). It might help to graph the functi
 
     Subtracting 1 from both sides, we get $n_1 = n_2$. The reciprocal of both sides of this equation is $1/n_1 = 1/n_2$. From this it follows that $x_1 = x_2$.
 
-    Case 3: Without loss of generality, suppose $x_1 \neq 1/j$ for any $j \in \mathbb{Z}$ and there exists a positive integer $n_2$ such that $x_2 = 1/n_2$. Then $f(x_1) = x_1$ and $f(x_2) = 1/(n_2 + 1)$. Set $j_0 = n_2$ 
+    Case 3: Without loss of generality, suppose $x_1 \neq 1/j$ for any $j \in \mathbb{Z}^+$ and there exists a positive integer $n_2$ such that $x_2 = 1/n_2$. Then $f(x_1) = x_1$ and $f(x_2) = 1/(n_2 + 1)$. Set $j_0 = n_2 + 1$. Since integers are closed under addition, $j_0$ is an integer. Then we get
+
+    $$x_1 = \frac{1}{j_0},$$
+
+    which is a contradiction. Since case 3 cannot occur and cases 1 and 2 hold true, we have proven that $f: (0, 1] \to (0, 1)$ is one-to-one.
+
+    \noindent
+    We will now show that $f: (0, 1] \to (0, 1) $ is onto. 
 
 \end{proof}
 

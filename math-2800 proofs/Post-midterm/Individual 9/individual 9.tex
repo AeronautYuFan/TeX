@@ -53,7 +53,15 @@ x & \text{if } x \neq \frac{1}{n} \text{ for any } n \in \mathbb{Z}^+ \\
 is one-to-one from \((0, 1]\) onto \((0, 1)\). It might help to graph the function.
 \end{problem}
 
-\begin{proof} In order to prove these two sets have the same cardinality, we will prove that the function $f : (0, 1] \to (0, 1) $ is one-to-one and onto. Let $x_0$ be any real number such that $x_0 \in (0, 1]$
+\begin{proof} In order to prove these two sets have the same cardinality, we will prove that the function $f : (0, 1] \to (0, 1) $ is one-to-one and onto. We will first use a proof by contraposition to prove that $f$ is one-to-one. Let $x_1, x_2$ be any two real numbers within $(0, 1]$ such that $f(x_1) = f(x_2)$. Let's consider cases:
+    
+    Case 1: Suppose $x_1, x_2 \neq 1/n$ for any $n \in \mathbb{Z}$. By definition, $f(x_1) = f(x_2),$ and it then follows that $x_1 = x_2$. 
+    
+    Case 2: Suppose there exists positive integers $n_1, n_2$ such that $x_1 = 1/n_1$ and $x_2 = 1/n_2$. Since $f(x_1) = f(x_2)$, it follows that
+
+    $$\frac{1}{n_1 + 1} = \frac{1}{n_2 + 1}.$$
+
+    This means that their reciprocals are also equivalent 
 
 \end{proof}
 

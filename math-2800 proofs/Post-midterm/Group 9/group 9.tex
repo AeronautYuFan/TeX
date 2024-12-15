@@ -43,46 +43,93 @@
 ((x, y), (s, t)) \in F \iff x^2 - y = s^2 - t.
 \]
 
-(Hint: Make sure you work enough examples to understand what pairs of points are related and why.) 
+\noindent (Hint: Make sure you work enough examples to understand what pairs of points are related and why.) 
 
-Show \(F\) is an equivalence relation or give a counterexample to one of the properties of an equivalence relation. If \(F\) is an equivalence relation, describe the equivalence classes for \(F\).
+\noindent Show \(F\) is an equivalence relation or give a counterexample to one of the properties of an equivalence relation. If \(F\) is an equivalence relation, describe the equivalence classes for \(F\).
 \end{problem}
 
 \begin{proof}
-    We will prove that $F$ is an equivalence relation by proving that it is reflexive, symmetric, and transitive. We will first show that $F$ is reflexive:
+    We will prove that $F$ is an equivalence relation by proving that it is reflexive, symmetric, and transitive. We will first show that $F$ is reflexive.
 
+    \noindent
     Let $(x_0, y_0)$ be any point in $\mathbb{R}^2$. Then it follows that
     $$x_0^2 - y_0^2 = x_0^2 - y_0^2.$$
     
     \noindent
-    Then $(x_0, y_0)F(x_0, y_0)$ holds true, and $F$ is reflexive. Next, we must prove that $F$ is symmetric:
+    Then $(x_0, y_0)F(x_0, y_0)$ holds true, and $F$ is reflexive. Next, we must prove that $F$ is symmetric.
 
+    \noindent
     Let $(x_0, y_0)$ and $(s_0, t_0)$ be any points in $\mathbb{R}^2$ such that $(x_0, y_0)F(s_0, t_0)$. By definition, $x_0^2 - y_0 = s_0^2 - t_0$. Then we know that 
     
     $$s_0^2 - t_0 = x_0^2 - y_0.$$
 
     \noindent
-    This shows that $(s_0, t_0)F(x_0, y_0)$, and $F$ is symmetric. Finally, we must prove that $F$ is transitive:
+    This shows that $(s_0, t_0)F(x_0, y_0)$, and $F$ is symmetric. Finally, we must prove that $F$ is transitive.
 
     Let $(x_0, y_0)$, $(s_0, t_0)$, and $(a_0, b_0)$ be any points in $\mathbb{R}^2$ such that $(x_0, y_0)F(s_0, t_0)$ and $(s_0, t_0)F(a_0, b_0)$. By definition, $x_0^2 - y_0 = s_0^2 - t_0$ and $s_0^2 - t_0 = a_0^2 - b_0$. Then it follows that
     
     $$x_0^2 - y_0 = a_0^2 - b_0.$$
 
-    By the definition of the relation, this means that $(x_0, y_0)F(a_0, b_0)$, and $F$ is transitive. Since $F$ is reflexive, symmetric, and transitive, $F$ is an equivalence relation.
+    \noindent By the definition of the relation, this means that $(x_0, y_0)F(a_0, b_0)$, and $F$ is transitive. Since $F$ is reflexive, symmetric, and transitive, $F$ is an equivalence relation.\\
+
+
+\noindent Since $F$ is an equivalence relation, we know that there exists an equivalence class $(m_0,n_0)/F$, where $(m_0,n_0)\in \mathbb{R}^2$ which consists of all the points $(x,y) \in \mathbb{R}^2$ such that $((m_0,n_0),(x,y) \in F$. From the definition of $F$, we know $m_0^2 - n_0 = x^2 - y$ and rearranging the equation we find $y = x^2 - m_0^2 + n_0$. Therefore we can define the equivalence class of $F$ as $(m_0,n_0)/F = \{(x, x^2 - m_0^2 + n_0)| x \in \mathbb{R}\}$.
+
+%
 
 \end{proof}
 
-\newpage
-\begin{problem}{8}
+
+\begin{problem}{8a}
     Let \( x, y \in \mathbb{R}^+ \).
 
 \noindent Define the relation \( A \) such that \( (x, y) \in A \) if and only if there exists \( n \in \mathbb{Z}^+_0 \) (the set of non-negative integers) such that \( x = 2^n y \). Is \( A \) an equivalence relation? Explain.
 \end{problem}
 
 \begin{proof}
-    We will first prove that
-    
-    \end{proof}
+We will prove that $A$ is not an equivalence relation by proving that it is not symmetric through contradiction. Suppose that $A$ is a symmetric relation. By definition, all points $(x_0,y_0)$ that satisfy the relation $A$ have a symmetric pair $(y_0,x_0)$ also satisfies the relation $A$. Set $x_0 = 6$ and $y_0 = 3$. Then $(x_0, y_0)$ satisfies the relation, as shown below:
+
+$$6 = 2^1(3).$$
+
+\noindent Since we assume that $A$ is symmetric, this means that $(y_0,x_0) \in A$. Then there exists an $n_0 \in \mathbb{Z}_0^+$ such that
+
+$$y_0 = 2^{n_0}x_0.$$
+
+\noindent
+However, we observe that $3 = 2^{n_0}6$. Dividing both sides by 6, we get
+
+$$\frac{1}{2} = 2^{n_0}.$$
+
+\noindent From this it follows that $n_0 = -1$. This is a contradiction, since $n_0$ cannot be negative. Thus, $A$ is not symmetric, and thus is not an equivalence relation.
+
+
+\end{proof}
+
+\newpage
+\begin{problem}{8c}
+Let \( x, y \in \mathbb{R}^+ \).
+
+Define the relation $B$ such that $(x, y) \in B$ if and only if there exists $n \in \mathbb{Z}$ such that $x = 2^ny$. Is $B$ an equivalence relation?
+
+\end{problem}
+
+\begin{proof}
+We will prove that $B$ is an equivalence relation by showing that it is reflexive, symmetric, and transitive. We start with proving reflexivity. Let $x_0$ be any positive real number. We can observe that
+
+$$x_0 = 2^0x_0.$$
+
+So $x_0Bx_0$ is clearly true, and $B$ is reflexive. We will now prove that $B$ is symmetric. Let $x_0, y_0 \in \mathbb{R}^+$ such that $x_0By_0$. By definition, we know that there exists an integer $n_0$ such that $x_0 = 2^{n_0}y$. Dividing both sides by $2^{n_0}$, we get
+
+$$y_0 = \frac{x_0}{2^{n_0}} = 2^{-n_0}x_0.$$
+
+Thus, $y_0Bx_0$ holds true, and $B$ is symmetric. Finally, we need to prove that $B$ is transitive. Let $x_0, y_0, z_0$ be any positive real numbers such that $(x_0, y_0) \in B$ and $(y_0, z_0) \in B$. By definition, we know there exist integers $n_0, j_0$ such that $x_0 = 2^{n_0}y_0$ and $y_0 = 2^{j_0}z_0$. Then it follows that
+
+$$x_0 = 2^{(n_0 + j_0)}z_0.$$
+
+Since integers are closed under addition, $n_0 + j_0$ is an integer. This means that $x_0Bz_0$, and thus, $B$ is transitive. Since we have proven that $B$ is reflexive, symmetric, and transitive, $B$ must be an equivalence relation.
+
+\end{proof}
+  
 
 \noindent While working on this proof, we received no external assistance aside from advice from Professor Mehmetaj.
 

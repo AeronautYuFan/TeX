@@ -1,5 +1,5 @@
 # Fdb version 4
-["pdflatex"] 1768274858.10248 "c:/Users/Aeron/Documents/Repos/TeX/math-3210 proofs/hw1/hw1.tex" "hw1.pdf" "hw1" 1768274859.60185 0
+["pdflatex"] 1768312034.52052 "c:/Users/Aeron/Documents/Repos/TeX/math-3210 proofs/hw1/hw1.tex" "hw1.pdf" "hw1" 1768312035.21916 0
   "C:/Users/Aeron/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map" 1764115046 80909 eab91d9745dd2edfd62a31d53cd5fe15 ""
   "C:/Users/Aeron/AppData/Local/MiKTeX/fonts/pk/ljfour/jknappen/ec/dpi600/tcrm1000.pk" 1738080351 11548 ee21eb8b52d44953254a279800e0892b ""
   "C:/Users/Aeron/AppData/Local/MiKTeX/miktex/data/le/pdftex/pdflatex.fmt" 1730427297 11948316 e042cc6d779bf190967185cc980c2ef9 ""
@@ -110,10 +110,10 @@
   "C:/Users/Aeron/AppData/Local/Programs/MiKTeX/tex/latex/tools/multicol.sty" 1718356376 32621 00e86c03dbf6e71d7ea7ebac2bd4fcaf ""
   "C:/Users/Aeron/AppData/Local/Programs/MiKTeX/tex/latex/url/url.sty" 1388490452 12796 8edb7d69a20b857904dd0ea757c14ec9 ""
   "C:/Users/Aeron/AppData/Local/Programs/MiKTeX/tex/latex/xcolor/xcolor.sty" 1729265222 55384 b454dec21c2d9f45ec0b793f0995b992 ""
-  "c:/Users/Aeron/Documents/Repos/TeX/math-3210 proofs/hw1/hw1.tex" 1768274857 6030 722ee9a436604fcc3e57248852131b8b ""
-  "hw1.aux" 1768274859 162 87159b23cce7c2b923b11c85495bbd6d "pdflatex"
-  "hw1.out" 1768274859 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
-  "hw1.tex" 1768274857 6030 722ee9a436604fcc3e57248852131b8b ""
+  "c:/Users/Aeron/Documents/Repos/TeX/math-3210 proofs/hw1/hw1.tex" 1768312033 6813 34f9af19311fb9102abc3155ed723a18 ""
+  "hw1.aux" 1768312035 162 87159b23cce7c2b923b11c85495bbd6d "pdflatex"
+  "hw1.out" 1768312035 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
+  "hw1.tex" 1768312033 6813 34f9af19311fb9102abc3155ed723a18 ""
   (generated)
   "hw1.aux"
   "hw1.log"

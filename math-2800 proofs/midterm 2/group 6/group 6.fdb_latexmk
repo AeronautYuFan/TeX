@@ -1,6 +1,6 @@
 # Fdb version 4
-["pdflatex"] 1730431481.67865 "c:/Users/Aeron/Documents/Repos/TeX/math-2800 proofs/midterm 2/group 6/group 6.tex" "group 6.pdf" "group 6" 1730431482.11671 0
-  "C:/Users/Aeron/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map" 1730427337 80909 eab91d9745dd2edfd62a31d53cd5fe15 ""
+["pdflatex"] 1768274065.57397 "c:/Users/Aeron/Documents/Repos/TeX/math-2800 proofs/midterm 2/group 6/group 6.tex" "group 6.pdf" "group 6" 1768274066.2378 0
+  "C:/Users/Aeron/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map" 1764115046 80909 eab91d9745dd2edfd62a31d53cd5fe15 ""
   "C:/Users/Aeron/AppData/Local/MiKTeX/miktex/data/le/pdftex/pdflatex.fmt" 1730427297 11948316 e042cc6d779bf190967185cc980c2ef9 ""
   "C:/Users/Aeron/AppData/Local/Programs/MiKTeX/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm" 1233951848 1004 54797486969f23fa377b128694d548df ""
   "C:/Users/Aeron/AppData/Local/Programs/MiKTeX/fonts/tfm/public/amsfonts/cmextra/cmex8.tfm" 1233951848 988 bdf658c3bfc2d96d3c8b02cfc1c94c20 ""
@@ -27,6 +27,7 @@
   "C:/Users/Aeron/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi8.pfb" 1247596666 35469 dcf3a5f2fc1862f5952e3ee5eb1d98c4 ""
   "C:/Users/Aeron/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb" 1247596667 32722 d7379af29a190c3f453aba36302ff5a9 ""
   "C:/Users/Aeron/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr17.pfb" 1247596666 32362 bc3f3eec7ab7d65fe700963d4017d32c ""
+  "C:/Users/Aeron/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr6.pfb" 1247596667 32734 69e00a6b65cedb993666e42eedb3d48f ""
   "C:/Users/Aeron/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb" 1247596667 32726 39f0f9e62e84beb801509898a605dbd5 ""
   "C:/Users/Aeron/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb" 1247596667 32569 5e5ddc8df908dea60932f3c484a54c0d ""
   "C:/Users/Aeron/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmti12.pfb" 1247596667 36118 fad905eba93cff5bce1e185fe980a177 ""
@@ -45,14 +46,13 @@
   "C:/Users/Aeron/AppData/Local/Programs/MiKTeX/tex/latex/amsmath/amstext.sty" 1718270740 2444 71618ea5f2377e33b04fb97afdd0eac2 ""
   "C:/Users/Aeron/AppData/Local/Programs/MiKTeX/tex/latex/base/article.cls" 1719393830 20144 67a5f8e0f9e445e8ec6834e595cebdc9 ""
   "C:/Users/Aeron/AppData/Local/Programs/MiKTeX/tex/latex/base/size12.clo" 1719393830 8449 30d84ec2eac77409e31fe51403c1ed64 ""
-  "C:/Users/Aeron/AppData/Local/Programs/MiKTeX/tex/latex/comment/comment.sty" 1468691282 10197 204f75d5d8d88aa345a8c402e879e63b ""
   "C:/Users/Aeron/AppData/Local/Programs/MiKTeX/tex/latex/geometry/geometry.cfg" 1578053545 1104 7ac475a4e3466b0b43e138e9356bda83 ""
   "C:/Users/Aeron/AppData/Local/Programs/MiKTeX/tex/latex/geometry/geometry.sty" 1578053545 42759 9cf6c5257b1bc7af01a58859749dd37a ""
   "C:/Users/Aeron/AppData/Local/Programs/MiKTeX/tex/latex/graphics/keyval.sty" 1718270727 2671 70891d50dac933918b827d326687c6e8 ""
   "C:/Users/Aeron/AppData/Local/Programs/MiKTeX/tex/latex/l3backend/l3backend-pdftex.def" 1716480499 29785 9f93ab201fe5dd053afcc6c1bcf7d266 ""
-  "c:/Users/Aeron/Documents/Repos/TeX/math-2800 proofs/midterm 2/group 6/group 6.tex" 1730431480 2182 8029d5893280def651a5358f1546d1b4 ""
-  "group 6.aux" 1730431482 32 3985256e7290058c681f74d7a3565a19 "pdflatex"
-  "group 6.tex" 1730431480 2182 8029d5893280def651a5358f1546d1b4 ""
+  "c:/Users/Aeron/Documents/Repos/TeX/math-2800 proofs/midterm 2/group 6/group 6.tex" 1768274063 7604 574cf1da7cdeee2d2e0425e42b94cf2d ""
+  "group 6.aux" 1768274066 32 ab05033ccbb38b00a31b200ccedf8001 "pdflatex"
+  "group 6.tex" 1768274063 7604 574cf1da7cdeee2d2e0425e42b94cf2d ""
   (generated)
   "group 6.aux"
   "group 6.log"

@@ -1,0 +1,92 @@
+\documentclass[12pt]{article}
+ 
+\usepackage[margin=1in]{geometry} 
+\usepackage{amsmath,amsthm,amssymb}
+\usepackage{comment}
+ 
+\newenvironment{theorem}[2][Theorem]{\begin{trivlist}
+\item[\hskip \labelsep {\bfseries #1}\hskip \labelsep {\bfseries #2.}]}{\end{trivlist}}
+\newenvironment{lemma}[2][Lemma]{\begin{trivlist}
+\item[\hskip \labelsep {\bfseries #1}\hskip \labelsep {\bfseries #2.}]}{\end{trivlist}}
+\newenvironment{exercise}[2][Exercise]{\begin{trivlist}
+\item[\hskip \labelsep {\bfseries #1}\hskip \labelsep {\bfseries #2.}]}{\end{trivlist}}
+\newenvironment{problem}[2][Problem]{\begin{trivlist}
+\item[\hskip \labelsep {\bfseries #1}\hskip \labelsep {\bfseries #2.}]}{\end{trivlist}}
+\newenvironment{question}[2][Question]{\begin{trivlist}
+\item[\hskip \labelsep {\bfseries #1}\hskip \labelsep {\bfseries #2.}]}{\end{trivlist}}
+\newenvironment{corollary}[2][Corollary]{\begin{trivlist}
+\item[\hskip \labelsep {\bfseries #1}\hskip \labelsep {\bfseries #2.}]}{\end{trivlist}}
+
+% Solutions use a modified proof environment
+\newenvironment{solution}
+               {\let\oldqedsymbol=\qedsymbol
+                \renewcommand{\qedsymbol}{$\blacktriangleleft$}
+                \begin{proof}[\textit\upshape Solution]}
+               {\end{proof}
+                \renewcommand{\qedsymbol}{\oldqedsymbol}}
+ 
+\begin{document}
+
+% --------------------------------------------------------------
+%                         Start here
+% --------------------------------------------------------------
+
+\title{Individual XXXX}%replace X with the appropriate number
+\author{Yu Fan Mei\\
+	Time Series Analysis} %if necessary, replace with your course title
+
+\maketitle
+
+\begin{problem}{1}
+    Let $Y_t = -t + 2t^2 + \frac{1}{2}Z_t$, where $Z_t$ is a zero mean stationary process with autocovariance function $\gamma_k$. Find the expectation and autocovariance of $Y_t$.
+\end{problem}
+
+Before we prove this, we will need a lemma.
+
+\begin{proof}
+    Part a. The expected value $E(Y_t$) is 
+
+    \begin{align*}
+        E(Y_t) &= E\left(-t + 2t^2 + \frac{1}{2}Z_t\right) \\
+        &= -t + 2t^2 + \frac{1}{2}E(Z_t) \\
+        &= -t + 2t^2 + \frac{1}{2}(0) \\
+        &= -t + 2t^2
+    \end{align*}
+\end{proof}
+
+\begin{proof}
+    The autocovariance function is defined as
+    \begin{align*}
+        \gamma_k &= Cov(Y_t, Y_{t+k}) \\
+        &= E\left[(Y_t - E(Y_t))(Y_{t+k} - E(Y_{t+k}))\right] \\
+        &= E\left[\left(-t + 2t^2 + \frac{1}{2}Z_t - (-t + 2t^2)\right)\left(-(t+k) + 2(t+k)^2 + \frac{1}{2}Z_{t+k} - (-(t+k) + 2(t+k)^2)\right)\right] \\
+        &= E\left[\left(\frac{1}{2}Z_t\right)\left(\frac{1}{2}Z_{t+k}\right)\right] \\
+        &= \frac{1}{4}E(Z_t Z_{t+k}) \\
+        &= \frac{1}{4}\gamma_k
+    \end{align*}
+
+
+
+
+\end{proof}
+
+\begin{problem}
+    Let $Z_t = W_t^2$, where $W_t \sim N(0, 1)$ is a zero mean stationary process with autocovariance function $\gamma_k$. Find the variance of $Z_t$.
+\end{problem}
+
+\begin{proof}
+    The variance of $Z_t$ is defined as
+    \begin{align*}
+        Var(Z_t) &= E(Z_t^2) - [E(Z_t)]^2 \\
+        &= E(W_t^4) - [E(W_t^2)]^2 \\
+        &= 3 - 1^2 \\
+        &= 2. \\
+    \end{align*}
+    where we used the fact that for a standard normal variable, $E(W_t^4) = 3$ and $Var(W_t) = 1$.
+
+\end{proof}
+
+
+\noindent While working on this proof, I received no external assistance aside from advice from Professor Mehmetaj.
+
+\end{document}

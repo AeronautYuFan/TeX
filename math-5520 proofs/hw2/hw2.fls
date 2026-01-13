@@ -1,7 +1,7 @@
-PWD c:\Users\Aeron\Documents\Repos\TeX\math-2800 proofs\Midterm 1\Group 4
+PWD c:\Users\Aeron\Documents\Repos\TeX\math-5520 proofs\hw2
 INPUT C:\Users\Aeron\AppData\Local\MiKTeX\miktex\data\le\pdftex\pdflatex.fmt
-INPUT c:\Users\Aeron\Documents\Repos\TeX\math-2800 proofs\Midterm 1\Group 4\group 4.tex
-OUTPUT group 4.log
+INPUT c:\Users\Aeron\Documents\Repos\TeX\math-5520 proofs\hw2\hw2.tex
+OUTPUT hw2.log
 INPUT C:\Users\Aeron\AppData\Local\Programs\MiKTeX\tex\latex\base\article.cls
 INPUT C:\Users\Aeron\AppData\Local\Programs\MiKTeX\tex\latex\base\article.cls
 INPUT C:\Users\Aeron\AppData\Local\Programs\MiKTeX\tex\latex\base\size12.clo
@@ -35,12 +35,14 @@ INPUT C:\Users\Aeron\AppData\Local\Programs\MiKTeX\tex\latex\amsfonts\amssymb.st
 INPUT C:\Users\Aeron\AppData\Local\Programs\MiKTeX\tex\latex\amsfonts\amssymb.sty
 INPUT C:\Users\Aeron\AppData\Local\Programs\MiKTeX\tex\latex\amsfonts\amsfonts.sty
 INPUT C:\Users\Aeron\AppData\Local\Programs\MiKTeX\tex\latex\amsfonts\amsfonts.sty
+INPUT C:\Users\Aeron\AppData\Local\Programs\MiKTeX\tex\latex\comment\comment.sty
+INPUT C:\Users\Aeron\AppData\Local\Programs\MiKTeX\tex\latex\comment\comment.sty
 INPUT C:\Users\Aeron\AppData\Local\Programs\MiKTeX\tex\latex\l3backend\l3backend-pdftex.def
 INPUT C:\Users\Aeron\AppData\Local\Programs\MiKTeX\tex\latex\l3backend\l3backend-pdftex.def
-INPUT .\group 4.aux
-INPUT .\group 4.aux
-INPUT group 4.aux
-OUTPUT group 4.aux
+INPUT .\hw2.aux
+INPUT .\hw2.aux
+INPUT hw2.aux
+OUTPUT hw2.aux
 INPUT C:\Users\Aeron\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmr17.tfm
 INPUT C:\Users\Aeron\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmr12.tfm
 INPUT C:\Users\Aeron\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmmi12.tfm
@@ -78,15 +80,17 @@ INPUT C:\Users\Aeron\AppData\Local\Programs\MiKTeX\fonts\tfm\public\amsfonts\sym
 INPUT C:\Users\Aeron\AppData\Local\Programs\MiKTeX\fonts\tfm\public\amsfonts\symbols\msbm10.tfm
 INPUT C:\Users\Aeron\AppData\Local\Programs\MiKTeX\fonts\tfm\public\amsfonts\symbols\msbm7.tfm
 INPUT C:\Users\Aeron\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmti12.tfm
-OUTPUT group 4.pdf
+OUTPUT hw2.pdf
 INPUT C:\Users\Aeron\AppData\Local\MiKTeX\fonts\map\pdftex\pdftex.map
-INPUT group 4.aux
+INPUT hw2.aux
 INPUT C:\Users\Aeron\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmbx12.pfb
 INPUT C:\Users\Aeron\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmbx12.pfb
 INPUT C:\Users\Aeron\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmex10.pfb
 INPUT C:\Users\Aeron\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmex10.pfb
 INPUT C:\Users\Aeron\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmmi12.pfb
 INPUT C:\Users\Aeron\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmmi12.pfb
+INPUT C:\Users\Aeron\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmmi8.pfb
+INPUT C:\Users\Aeron\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmmi8.pfb
 INPUT C:\Users\Aeron\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmr12.pfb
 INPUT C:\Users\Aeron\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmr12.pfb
 INPUT C:\Users\Aeron\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmr17.pfb
@@ -97,5 +101,3 @@ INPUT C:\Users\Aeron\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\c
 INPUT C:\Users\Aeron\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmsy10.pfb
 INPUT C:\Users\Aeron\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmti12.pfb
 INPUT C:\Users\Aeron\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmti12.pfb
-INPUT C:\Users\Aeron\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\symbols\msbm10.pfb
-INPUT C:\Users\Aeron\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\symbols\msbm10.pfb

@@ -1,0 +1,167 @@
+\documentclass{article}
+
+\usepackage[margin=0.75in]{geometry}
+\usepackage{amsmath,amssymb}
+\usepackage{graphicx,float}
+\usepackage{multirow,setspace}
+\usepackage{natbib,enumerate}
+\usepackage{caption}
+\usepackage{subcaption}
+\usepackage{termcal} 
+\usepackage{xcolor}
+\usepackage{enumitem}
+\usepackage{gensymb}
+\usepackage{booktabs}
+\usepackage{listings, makecell}
+\usepackage{hyperref}
+\usepackage{multicol}
+
+\setlength{\marginparwidth}{2.5cm}
+
+\newcommand{\HRule}{\rule{\linewidth}{0.5mm}}
+\setlength\parindent{0pt}
+
+\newenvironment{problem}[2][Problem]{\begin{trivlist}
+\item[\hskip \labelsep {\bfseries #1}\hskip \labelsep {\bfseries #2.}]}{\end{trivlist}}
+
+
+\begin{document}
+
+    \begin{center}
+        \HRule \\[0.4cm]        
+        {\Large \textbf{Abstract Algebra HW1}} \\[0.2cm]
+
+        {\large Yu Fan Mei $\cdot$ MATH-3210} \\
+        \HRule \\[0.3cm]
+    \end{center}
+
+    \textbf{25.} Determine whether or not the following relations are equivalence relations on the given set. If the relation is an equivalence relation, describe the partition given by it. If the relation is not an equivalence relation, state why it fails to be one.
+
+\begin{problem}{25a}
+    $x \sim y$ in $\mathbb{R}$ if $x \geq y$.
+
+    \begin{itemize}
+        \item Set $x_0 = 3$, and $y_0 = 2$. We can see $3 \geq 2$, which means $x_0 \sim y_0$, but $2 \not\geq 3$. This means the relation is not symmetric.
+    \end{itemize}
+
+    This relation is not an equivalence relation-- it isn't symmetric.
+\end{problem}
+
+\begin{problem}{25b}
+    $m \sim n$ in $\mathbb{Z}$ if $mn > 0$.
+
+    \begin{itemize}
+        \item Set $m_0 = 0$. Zero is an integer, so $m_0 \in \mathbb{Z}$. We can see that $m_0m_0 = 0$, which is not greater than zero. This $m_0 \not\sim m_0$ and that this relation is not reflexive.
+    \end{itemize}
+
+    Since this relation isn't reflexive, it can't be an equivalence relation.
+\end{problem}
+
+\begin{problem}{25c}
+    $x \sim y$ in $\mathbb{R}$ if $|x - y| \leq 4$.
+
+    \begin{itemize}
+        \item Set $x_0 = 10, y_0 = 6, z_0 = 2$. Then $|x_0 - y_0| = 4 \leq 4$, and $|y_0 - z_0| = 4 \leq 4$. We can see that $x_0 \sim y_0$ and $y_0 \sim z_0$. But, $|x_0 - z_0| = 8 \not\leq 4$. So this relation is not transitive.
+    \end{itemize}
+
+    Since the relation isn't transitive, it is not an equivalence relation.
+\end{problem}
+
+\begin{problem}{25d}
+    $m \sim n$ in $\mathbb{Z}$ if $m \equiv n$ mod 6.
+
+    \begin{itemize}
+        \item Let $m_0$ be any integer. Then $m_0 \equiv m_0$ mod 6, because $m_0 - m_0 = 6(0)$. This means the relation is reflexive.
+        \item Let $m_0$, $n_0$ be integers such that $m_0 \sim n_0$. This means there exists an integer $k$ such that $m_0 - n_0 = 6k$. But we can see clearly that $n_0 - m_0 = 6(-k)$, which means the relation is symmetric.
+        \item Let $m_0, n_0, a_0$ be integers such that $m_0 \sim n_0$ and $n_0 \sim a_0$. This means there exists an integer $k_1$ and $k_2$ such that $6k_1 = m_0 - n_0$ and $6k_2 = n_0 - a_0$. When we add these together, we get $6(k_1 + k_2) = m_0 - a_0$. This means that $m_0 \sim a_0$, and the relation is transitive.
+    \end{itemize}
+    Thus, this is an equivalence relation. The partitions of this equivalence relation are:
+
+    \begin{multicols}{3}
+        \begin{itemize}
+            \item $[0] = \{6k | k \in \mathbb{Z}\}$
+            \item $[1] = \{6k + 1 | k \in \mathbb{Z}\}$
+            \item $[2] = \{6k + 2 | k \in \mathbb{Z}\}$
+            \item $[3] = \{6k + 3 | k \in \mathbb{Z}\}$
+            \item $[4] = \{6k + 4 | k \in \mathbb{Z}\}$
+            \item $[5] = \{6k + 5 | k \in \mathbb{Z}\}$
+        \end{itemize}
+    \end{multicols}
+\end{problem}
+
+\begin{problem}{26}
+    Define a relation $\sim$ on $\mathbb{R}^2$ by stating that $(a, b) \sim (c, d)$ if and only if $a^2 + b^2 \leq c^2 + d^2$. Show that it is reflexive and transitive but not symmetric.
+
+    \begin{itemize}
+        \item Let $(a_0, b_0)$ be any ordered pair in $\mathbb{R}^2$. Then the statement $a_0^2 + b_0^2 \leq a_0^2 + b_0^2$ is true, which means the relation is reflexive.
+        \item Let $a_1, a_2, a_3, b_1, b_2, b_3 \in \mathbb{R}$ such that $(a_1, b_1) \sim (a_2, b_2)$ and $(a_2, b_2) \sim (a_3, b_3)$. This means $a_1^2 + b_1^2 \leq a_2^2 + b_2^2$, and $a_2^2 + b_2^2 \leq a_3^2 + b_3^2$. From these two inequalities, we can clearly see that $a_1^2 + b_1^2 \leq a_3^2 + b_3^2$, which means that the relation is transitive.
+        \item Set $a_0, b_0 = 0$ and $c_0, d_0 = 1$. Then $a_0^2 + b_0^2 = 0$ and $c_0^2 + d_0^2 = 2$. We can clearly see $a_0^2 + b_0^2 \leq c_0^2 + d_0^2$. However, $c_0^2 + d_0^2 \not\leq a_0^2 + b_0^2$, meaning the relation isn't symmetric.
+    \end{itemize}
+\end{problem}
+
+\newpage
+
+
+\begin{problem}{5}
+    Prove that $10^{n+1} + 10^n + 1$ is divisible by 3 for $n \in \mathbb{N}$.
+    
+    \begin{itemize}
+        \item Using the base case of $n = 0$, we can see that $10^1 + 10^0 + 1 = 12 = 3(4)$ meaning it is divisible by 3.
+    \end{itemize}
+
+    Now we will show via induction that this holds true for all $n \in \mathbb{N}$.
+    \begin{itemize}
+        \item Assume there exists an integer $k$ such that $10^{n+1} + 10^n + 1 = 3k$. We want to show that there exists an integer $m$ such that $10^{(n+1)+1} + 10^{n+1} + 1 = 3m$.
+        \item Set $m_0 = 10k - 3$. Since integers are closed under addition and multiplication, $3m_0 = 3(10k - 3)$ is an integer.
+        \item Expanding $3m_0$, we get
+        \begin{align*}
+            3m_0 & = 3(10k - 3) \\
+                & = 10(3k) - 9 \\
+                & = 10(10^{n+1} + 10^n + 1) - 9 \\
+                & = 10^{n+2} + 10^{n+1} + 10 - 9 \\
+                & = 10^{n+2} + 10^{n+1} + 1.
+        \end{align*}
+    \end{itemize}
+
+    This shows that $10^{n+1} + 10^n + 1$ is divisible by 3 for all $n \in \mathbb{N}$.
+\end{problem}
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+\end{document}

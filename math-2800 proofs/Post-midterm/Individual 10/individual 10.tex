@@ -1,0 +1,89 @@
+\documentclass[12pt]{article}
+ 
+\usepackage[margin=1in]{geometry} 
+\usepackage{amsmath,amsthm,amssymb}
+\usepackage{comment}
+ 
+\newenvironment{theorem}[2][Theorem]{\begin{trivlist}
+\item[\hskip \labelsep {\bfseries #1}\hskip \labelsep {\bfseries #2.}]}{\end{trivlist}}
+\newenvironment{lemma}[2][Lemma]{\begin{trivlist}
+\item[\hskip \labelsep {\bfseries #1}\hskip \labelsep {\bfseries #2.}]}{\end{trivlist}}
+\newenvironment{exercise}[2][Exercise]{\begin{trivlist}
+\item[\hskip \labelsep {\bfseries #1}\hskip \labelsep {\bfseries #2.}]}{\end{trivlist}}
+\newenvironment{problem}[2][Problem]{\begin{trivlist}
+\item[\hskip \labelsep {\bfseries #1}\hskip \labelsep {\bfseries #2.}]}{\end{trivlist}}
+\newenvironment{question}[2][Question]{\begin{trivlist}
+\item[\hskip \labelsep {\bfseries #1}\hskip \labelsep {\bfseries #2.}]}{\end{trivlist}}
+\newenvironment{corollary}[2][Corollary]{\begin{trivlist}
+\item[\hskip \labelsep {\bfseries #1}\hskip \labelsep {\bfseries #2.}]}{\end{trivlist}}
+
+% Solutions use a modified proof environment
+\newenvironment{solution}
+               {\let\oldqedsymbol=\qedsymbol
+                \renewcommand{\qedsymbol}{$\blacktriangleleft$}
+                \begin{proof}[\textit\upshape Solution]}
+               {\end{proof}
+                \renewcommand{\qedsymbol}{\oldqedsymbol}}
+ 
+\begin{document}
+
+% --------------------------------------------------------------
+%                         Start here
+% --------------------------------------------------------------
+
+\title{Individual XXXX}%replace X with the appropriate number
+\author{Yu Fan Mei\\
+	Introduction to Proof and Problem Solving} %if necessary, replace with your course title
+
+\maketitle
+
+\begin{problem}{1}
+    1. Show that $(1, \infty)$ has cardinality $c$.
+
+2. State whether each of the following is true or false. (You do not need to prove them.)
+
+(a) If a set $A$ is countable, then $A$ is infinite.
+
+false
+
+(b) If a set $A$ denumerable, then $A$ is countable.
+
+true
+
+(c) If a set $A$ if finite, then $A$ is denumerable.
+
+false
+
+(d) If a set $A$ is uncountable, then $A$ is not denumerable.
+
+true
+
+(e) If a set $A$ is uncountable, then $A$ is not finite.
+
+true
+
+(f ) If a set $A$ is not denumerable, then $A$ is uncountable.
+
+false
+\end{problem}
+
+Before we prove this, we will need a lemma.
+
+\begin{lemma}{1} 
+    For every class at Georgetown that is $\geq$ MATH-2000, you will get an $A$ or $A-.$
+\end{lemma}
+
+\begin{proof}
+    Let $X$ be a discrete random variable representing the number of classes you get an $A$ in. The rest of the proof is by magic. Thus, we have proven that this lemma is true.
+\end{proof}
+
+Now, we will prove problem 1 using something...
+
+\begin{proof} The proof is left as an exercise to the reader.
+
+\end{proof}
+
+
+\noindent While working on this proof, I received no external assistance aside from advice from Professor Mehmetaj.
+
+\end{document}

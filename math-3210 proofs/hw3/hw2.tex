@@ -14,6 +14,7 @@
 \usepackage{booktabs}
 \usepackage{listings, makecell}
 \usepackage{hyperref}
+\usepackage{multicol}
 
 \setlength{\marginparwidth}{2.5cm}
 \newcommand{\HRule}{\rule{\linewidth}{0.5mm}}
@@ -133,6 +134,35 @@
 
 
     \begin{problem}{5} Find the order of every element in $\mathbb{Z}_{18}$.
+        \begin{itemize}
+            \item The order of any element $k \in \mathbb{Z}_{18}$ is given by $\frac{18}{\texttt{gcd}(k, 18)}$.
+        \end{itemize}
+
+        \begin{multicols}{3}
+            \begin{itemize}
+                \item ord(1) = 18
+                \item ord(2) = 9
+                \item ord(3) = 6
+                \item ord(4) = 9
+                \item ord(5) = 18
+                \item ord(6) = 3
+                \item ord(7) = 18
+                \item ord(8) = 9
+                \item ord(9) = 2
+                \item ord(10) = 9
+                \item ord(11) = 18
+                \item ord(12) = 3
+                \item ord(13) = 18
+                \item ord(14) = 9
+                \item ord(15) = 6
+                \item ord(16) = 9
+                \item ord(17) = 18
+                \item ord(0) = 1
+            \end{itemize}
+        \end{multicols}
+    \end{problem}
+
+    \begin{problem}{26}
         
     \end{problem}
 

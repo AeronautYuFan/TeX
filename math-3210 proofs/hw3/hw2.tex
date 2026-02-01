@@ -162,7 +162,32 @@
         \end{multicols}
     \end{problem}
 
-    \begin{problem}{26}
+    \begin{problem}{26} Prove that $\mathbb{Z}_p$ has no nontrivial subgroups if $p$ is prime.
+        \begin{itemize}
+            \item Let $\mathbb{Z}_{p_0}$ be the additive group of integers mod $p_0$ such that $p_0$ is a prime integer.
+            \item Let $H_0$ be any subgroup of $\mathbb{Z}_{p_0}$. Since every subgroup of a cyclic group is also cyclic, this means there exists an integer $k_0 \in \mathbb{Z}_{p_0}$ such that $k_0$ generates $H_0$, or in other words, $\langle k_0 \rangle = H_0$. 
+            \item Because $\mathbb{Z}_{p_0}$ is a modulus group, we know $0 \leq k_0 < p_0$. If $k_0 = 0$, this means $H_0 = \{0\}$, which is a trivial subgroup. Let's suppose $0 < k_0 < p_0$. Then the order of $k_0$ is
+            \begin{align*}
+                ord(k_0) & = \frac{p_0}{\texttt{gcd}(k_0, p_0)} \\
+                    & = \frac{p_0}{1} \\
+                    & = p_0.
+            \end{align*}
+
+            \item The above is true because $p_0$ is prime, so its greatest common divisor with $k_0$ is 1 because $0 < k_0 < p_0$. Since the order of $k_0$ is $p_0$, this means $|H_0| = |\mathbb{Z}_{p_0}|$.
+            \item Following from this and using the fact that $H_0$ is a subgroup, this must mean $H_0$ is the subgroup with all the elements in $\mathbb{Z}_{p_0}$, which is a trivial subgroup.
+        \end{itemize}
+    \end{problem}
+
+
+
+
+
+
+    \begin{problem}{28} Let $a$ be a generator in group $G$. What is a generator for $\langle a^m \rangle \cap \langle a^n \rangle$?
+
+        \begin{itemize}
+            \item Let $H_0 = \langle a^m \rangle \cap \langle a^n \rangle$. Let $h_0 \in H_0$. By definition, there exists integers $m_0, n_0$ such that $h_0 = a^{m_0} = a^{n_0}$.
+        \end{itemize}
         
     \end{problem}
 

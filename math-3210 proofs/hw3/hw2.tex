@@ -206,10 +206,16 @@
 
     \end{problem}
 
-
-
-
-
+    \begin{problem}{31} Let $G$ be an abelian group. Show that the elements of finite order in $G$ form a subgroup.
+        \begin{itemize}
+            \item Let $H$ be the set of elements of finite order in $G$. Since $G$ is a group, the identity element $e$ exists in $G$. You can see that $ord(e) = 1$, so $H$ is nonempty because $e \in H$.
+            \item Let $g_0, h_0 \in H$. Because of how $H$ is defined, there exist integers $k, l$ such that $g_0^k = h_0^l = e$.
+            \item Now let's look at the element $g_0h_0^{-1}$. Since $G$ is abelian, $(g_0h_0^{-1})^{kl} = g_0^{kl}h_0^{-kl}$.
+            \item Since $g_0$ and $h_0$ are finite elements, $g_0^{kl} = h_0^{-kl} = e$, and are elements of $H$. It follows that $(g_0h_0^{-1})$ is finite too, and must also be an element of $H$.
+            \item This shows that $H$ defined as the elements of finite order from $G$ form a subgroup.
+        \end{itemize}
+    
+    \end{problem}
 
 
 

@@ -198,6 +198,12 @@
 
     \begin{problem}{30} Suppose $G$ is a group and let $a, b \in G$. Prove that if $|a| = m$ and $|b| = n$ with $\texttt{gcd}(m, n) = 1$, then $\langle a \rangle \cap \langle b \rangle = \{ e \}$.
 
+        \begin{itemize}
+            \item Let $x_0 \in \langle a \rangle \cap \langle b \rangle$. By definition, there exist integers $k_1 < m$ and $k_2 < n$ such that $x_0 = a^{k_1} = b^{k_2}$. Since $\langle a \rangle$ and $\langle b \rangle$ have finite orders, they are also cyclic. Because it is a cyclic group, if we were to pick $k_1 \geq m$, you could rewrite $a^{k_1}$ as $a^{k_1 \mod m}$. This is also true for $k_2$ and $n$.
+            \item This means $\langle a^m \rangle = \langle b^n \rangle = e$. From this, it follows that $x_0^{k_1m} = x_0^{k_2n} = e$. This means $k_1m = k_2n$. 
+            \item We know $m, n > 0$, because they are orders of $a$ and $b$. Since $\texttt{gcd}(m, n) = 1$, and because of our restrictions on $k_1$ and $k_2$, this means $k_1 = k_2 = 0$. This means $x_0 = e$.
+        \end{itemize}
+
     \end{problem}
 
 

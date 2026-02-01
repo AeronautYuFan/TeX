@@ -183,13 +183,21 @@
 
 
 
+    \newpage
     \begin{problem}{28} Let $a$ be a generator in group $G$. What is a generator for $\langle a^m \rangle \cap \langle a^n \rangle$?
 
         \begin{itemize}
-            \item Let $H_0 = \langle a^m \rangle \cap \langle a^n \rangle$. Let $h_0 \in H_0$. By definition, there exists integers $m_0, n_0$ such that $h_0 = a^{m_0} = a^{n_0}$.
-            \item Since $H_0$ is a group, this means $h_0^{-1} \in H_0$. Then we can operate with the inverse and get $h_0h_0^{-1} = e = a^{m_0}a^{-n_0} = a^{m_0 - n_0}$.
+            \item A generator for $\langle a^m \rangle \cap \langle a^n \rangle$ would be $\langle a^{\texttt{lcm}(m, n)} \rangle$, and we'll show this by proving equality of subgroups.
+            \item Set $x_0 = \texttt{lcm}(m, n)$, and set $H = \langle a^{x_0} \rangle$. We will prove $H \subseteq \langle a^m \rangle \cap \langle a^n \rangle$ and $H \supseteq  \langle a^m \rangle \cap \langle a^n \rangle$. Because of how we defined $x_0$, there exist integers $k_1, k_2$ such that $x_0 = k_1m = k_2n$. 
+            \item Let $h_0 \in H$. Then there exists $l \in \mathbb{Z}$ such that $h_0 = a^{x_0l}$. Since $x_0 = k_1m = k_2n$, we can see that $h_0 = a^{k_1lm} \in \langle a^m \rangle$ and $h_0 = a^{k_2ln} \in \langle a^n \rangle$. Thus, $H \subseteq \langle a^m \rangle \cap \langle a^n \rangle$.
+            \item Let $j_0 \in \langle a^m \rangle \cap \langle a^n \rangle$. Then there exist integers $s_1, s_2$ such that $j_0 = a^{ms_1} = a^{ns_2}$. This means $ms_1 = ns_2$. But this also means $j_0 = a^{mx_0t}$, where $t \in \mathbb{Z}$.
+            \item Rewriting the last equality, we can see that $j_0 = (a^{x_0})^{mt}$. This means $j_0 \in H$, and thus $a^{\texttt{lcm}(m, n)}$ is a generator.
         \end{itemize}
         
+    \end{problem}
+
+    \begin{problem}{30} Suppose $G$ is a group and let $a, b \in G$. Prove that if $|a| = m$ and $|b| = n$ with $\texttt{gcd}(m, n) = 1$, then $\langle a \rangle \cap \langle b \rangle = \{ e \}$.
+
     \end{problem}
 
 
